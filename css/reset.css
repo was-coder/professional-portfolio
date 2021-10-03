@@ -1,8 +1,11 @@
 /* Base styles */
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto&display=swap');
+
 :root{
     --primary: #3c3a39;
     --secondary: #fff;
     --tertiary:#1c1a19;
+    --others: #ff6b00;
 }
 
 
