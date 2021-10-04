@@ -2,7 +2,7 @@
 
 > This is my professional portfolio project which shows my works.
 
-![screenshot](No screenshot for now)
+![screenshot](No screenshot for)
 
 ## Built With
 
