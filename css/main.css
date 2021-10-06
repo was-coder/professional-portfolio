@@ -9,9 +9,9 @@
 
 .logo-link {
   text-transform: capitalize;
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--poppins);
   text-decoration: none;
-  color: #fff;
+  color: var(--secondary);
   font-size: 1.4rem;
   font-weight: bold;
 }
@@ -23,7 +23,7 @@
 .hamburger-button {
   background: transparent;
   border: none;
-  color: #fff;
+  color: var(--secondary);
   cursor: pointer;
 }
 
@@ -47,16 +47,16 @@
   color: var(--others);
   text-transform: capitalize;
   font-size: 56px;
-  font-family: 'Crete Round', serif;
+  font-family: var(--crete);
 }
 
 .main-container h2 {
   color: #fff5e1;
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--roboto);
 }
 
 .main-container p {
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--poppins);
   color: var(--secondary);
   padding: 10px 0;
 }
@@ -70,3 +70,116 @@
 }
 
 /* end of home styling */
+
+/* start of work styling */
+.work-h2 {
+  margin: 50px 0 10px 0;
+  text-align: center;
+  text-transform: capitalize;
+  font-family: var(--crete);
+  font-size: 2.5rem;
+  color: var(--tertiary);
+}
+
+.underline {
+  margin: 0 auto;
+  width: 315px;
+}
+
+.stories-div {
+  display: flex;
+  flex-direction: column;
+  margin: 30px auto;
+  width: 80%;
+}
+
+.stories-div h3 {
+  margin: 15px 0;
+  text-transform: capitalize;
+  font-size: 2rem;
+  font-family: var(--crete);
+  color: var(--alternative);
+}
+
+.stories-div p {
+  font-size: 1rem;
+  font-family: var(--inter);
+  color: var(--alternative);
+}
+
+.button-div button {
+  margin: 20px 0;
+  margin-right: 20px;
+  padding: 5px 15px;
+  font-size: 0.9rem;
+  background: var(--secondary);
+  font-family: var(--inter);
+  border: 1px solid #8993a4;
+}
+
+.stories-button {
+  width: 30%;
+  padding: 10px 5px;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  font-family: var(--inter);
+  background-color: var(--others);
+  border: none;
+  color: var(--secondary);
+}
+
+.work-grid {
+  display: grid;
+  grid-gap: 30px;
+}
+
+.inner-work {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 80%;
+  background-image: url(/image/professional.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.inner-work-text {
+  padding: 30px;
+}
+
+.inner-work h3 {
+  text-transform: capitalize;
+  font-size: 2rem;
+  color: var(--secondary);
+  font-family: var(--crete);
+}
+
+.inner-work p {
+  color: var(--secondary);
+  margin: 10px 0;
+  font-size: 1.1rem;
+  font-family: var(--inter);
+}
+
+.inner-button button {
+  margin-right: 10px;
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  background: rgba(255, 255, 255, 0.24);
+  color: var(--secondary);
+  font-family: var(--inter);
+  border: none;
+}
+
+.inner-work-btn {
+  padding: 15px 0;
+  color: var(--secondary);
+  background-color: var(--others);
+  border: none;
+  font-size: 1.2rem;
+  font-family: var(--inter);
+  text-transform: capitalize;
+}
+
+/* end of work styling */
