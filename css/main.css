@@ -72,6 +72,10 @@
 /* end of home styling */
 
 /* start of work styling */
+.work {
+  min-height: 470vh;
+}
+
 .work-h2 {
   margin: 50px 0 10px 0;
   text-align: center;
@@ -183,3 +187,83 @@
 }
 
 /* end of work styling */
+
+/* start of about styling */
+.about {
+  background: var(--dark);
+  padding: 70px 0;
+}
+
+.about-div {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.about-div h2 {
+  font-family: var(--crete);
+  color: var(--others);
+  font-size: 5rem;
+  letter-spacing: 4px;
+}
+
+.about-div p {
+  color: #f4f5f7;
+  font-family: var(--inter);
+  padding: 15px 0;
+}
+
+.about-div button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  text-transform: capitalize;
+  background-color: var(--others);
+  border: none;
+  color: var(--secondary);
+  font-size: 1.1rem;
+  font-family: var(--inter);
+  cursor: pointer;
+}
+
+.about-underline {
+  margin: 0 auto;
+  width: 80%;
+  margin-top: 270px;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/image/illustration-about-me-mobile.png);
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+
+.skills-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.skills-flex div {
+  display: flex;
+  gap: 10px;
+  margin: 70px 0 15px 0;
+}
+
+.skills-flex div h3 {
+  font-size: 1.4rem;
+  text-transform: capitalize;
+  color: var(--secondary);
+}
+
+.skills-flex li {
+  list-style: none;
+  text-align: center;
+  color: var(--secondary);
+  padding: 10px 0;
+  font-size: 1.1rem;
+  font-family: var(--inter);
+}
+
+/* end of about styling */
