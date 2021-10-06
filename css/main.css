@@ -1,5 +1,5 @@
 /* start of header styling */
-.header-div {
+.logo-div {
   background: var(--primary);
   display: flex;
   height: 50px;
@@ -7,7 +7,7 @@
   padding: 5px 20px;
 }
 
-.header-logo {
+.logo-link {
   text-transform: capitalize;
   font-family: 'Poppins', sans-serif;
   text-decoration: none;
@@ -16,11 +16,14 @@
   font-weight: bold;
 }
 
-.header-button {
+.hamburger-nav {
+  padding-top: 5px;
+}
+
+.hamburger-button {
   background: transparent;
   border: none;
   color: #fff;
-  padding-bottom: 5px;
   cursor: pointer;
 }
 
