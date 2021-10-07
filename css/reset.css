@@ -1,18 +1,109 @@
 /* Base styles */
-@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto&display=swap&family=Inter&display=swap');
 
-:root{
-    --primary: #3c3a39;
-    --secondary: #fff;
-    --tertiary:#1c1a19;
-    --others: #ff6b00;
+:root {
+  --primary: #3c3a39;
+  --secondary: #fff;
+  --tertiary: #1c1a19;
+  --others: #f55800;
+  --alternative: #091e42;
+  --dark: #1c1a19;
+  --poppins: 'Poppins', sans-serif;
+  --crete: 'Crete Round', serif;
+  --roboto: 'Roboto', sans-serif;
+  --inter: 'Inter', sans-serif;
 }
-
 
 *,
 *::before,
-*::after{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.logo-div,
+.main-container,
+.svg-home-container,
+.stories-div,
+.stories-div-ul,
+.inner-work,
+.inner-ul,
+.skills,
+.skills-flex,
+.inner-skills {
+  display: flex;
+}
+
+.hamburger-button,
+.inner-work-btn,
+.about-div button,
+.svg-home-container,
+.stories-button {
+  cursor: pointer;
+}
+
+.main-container h1,
+.work-h2,
+.stories-div h3,
+.inner-work h3,
+.about-div h2 {
+  font-family: var(--crete);
+}
+
+.logo-link,
+.main-container p {
+  font-family: var(--poppins);
+}
+
+.main-container h1,
+.about-div h2 {
+  color: var(--others);
+}
+
+.stories-button,
+.inner-work-btn,
+.about-div button {
+  background-color: var(--others);
+}
+
+.stories-div h3,
+.stories-div p {
+  color: var(--alternative);
+}
+
+.logo-link,
+.hamburger-button,
+.main-container p,
+.stories-button,
+.inner-work h3,
+.inner-work p,
+.inner-ul li,
+.inner-work-btn,
+.about-div button,
+.skillset {
+  color: var(--secondary);
+}
+
+.stories-div p,
+.stories-div-ul li,
+.stories-button,
+.inner-work p,
+.inner-ul li .inner-work-btn,
+.about-div p,
+.about-div button,
+.skillset,
+.skillset li {
+  font-family: var(--inter);
+}
+
+.button:active {
+  background-color: #e05304;
+  color: var(--secondary);
+}
+
+.button:hover {
+  background-color: #fff5e1;
+  color: #f55800;
+  border: 1px solid #f55800;
 }
