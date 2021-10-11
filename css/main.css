@@ -228,3 +228,11 @@
 }
 
 /* end of about styling */
+.contact-section-header{
+color: #172B4D; 
+font-size: 32px;
+}
+
+.input{
+  width: 100%;
+}
