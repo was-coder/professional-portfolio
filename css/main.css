@@ -30,10 +30,10 @@
   min-height: 100vh;
   flex-direction: column;
   justify-content: center;
-  padding: 0 20px;
+  padding: 120px 24px;
   position: relative;
-  background-image: url(/image/illustration-header-mobile.png);
-  background-position: right bottom;
+  background-image: url(../image/illustration-header-mobile.png);
+  background-position: right 0 bottom -40px;
   background-repeat: no-repeat;
 }
 
@@ -115,7 +115,7 @@
   flex-direction: column;
   margin: 0 auto;
   width: 80%;
-  background-image: url(/image/professional.png);
+  background-image: url(../image/professional.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -192,7 +192,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url(/image/illustration-about-me-mobile.png);
+  background-image: url(../image/illustration-about-me-mobile.png);
   background-position: top right;
   background-repeat: no-repeat;
 }
@@ -228,49 +228,53 @@
 }
 
 /* end of about styling */
-.contact-section{
+
+/* start of contact and footer styling */
+.contact-section {
   padding: 120px 24px;
 }
 
-.contact-section-header{
-color: #172B4D; 
-font-size: 32px;
-line-height: 44px;
-font-weight: 700;
-text-align: center;
+.contact-section-header {
+  color: #172b4d;
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 60px;
 }
 
 .input,
-.input-textarea{
+.input-textarea {
   width: 100%;
-  padding: 14px;
-  border: none;
-  color: #979493;
+  padding: 10px;
   font: 400 15px/24px 'Inter', sans-serif;
+  color: #979493;
+  margin-bottom: 24px;
+  border: none;
 }
 
-.input{
-  border-bottom: 1px solid #DBD8D7;
+.input {
+  border-bottom: 1px solid #dbd8d7;
 }
-.input-textarea{
-  border: none;
-  background-color: #FBF8F7;
+
+.input-textarea {
+  background-color: #fbf8f7;
 }
+
 .input:focus,
-.input-textarea:focus{
+.input-textarea:focus {
   outline: none;
 }
+
 .contact-but,
-.input-textarea,
-input{
-  margin-top:24px;
-}
-.contact-but,
-.footer{
+.footer {
   display: grid;
   place-items: center;
 }
 
-.footer .svg-home-container>a>svg{
-  color:red;
+.footer {
+  border-top: 1px solid #dfe1e6;
+  padding: 20px 0;
 }
+
+/* end of contact and footer styling */
