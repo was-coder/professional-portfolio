@@ -228,11 +228,49 @@
 }
 
 /* end of about styling */
+.contact-section{
+  padding: 120px 24px;
+}
+
 .contact-section-header{
 color: #172B4D; 
 font-size: 32px;
+line-height: 44px;
+font-weight: 700;
+text-align: center;
+}
+
+.input,
+.input-textarea{
+  width: 100%;
+  padding: 14px;
+  border: none;
+  color: #979493;
+  font: 400 15px/24px 'Inter', sans-serif;
 }
 
 .input{
-  width: 100%;
+  border-bottom: 1px solid #DBD8D7;
+}
+.input-textarea{
+  border: none;
+  background-color: #FBF8F7;
+}
+.input:focus,
+.input-textarea:focus{
+  outline: none;
+}
+.contact-but,
+.input-textarea,
+input{
+  margin-top:24px;
+}
+.contact-but,
+.footer{
+  display: grid;
+  place-items: center;
+}
+
+.footer .svg-home-container>a>svg{
+  color:red;
 }
