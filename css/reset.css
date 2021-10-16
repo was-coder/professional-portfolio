@@ -31,7 +31,8 @@
 .inner-ul,
 .skills,
 .skills-flex,
-.inner-skills {
+.inner-skills,
+.form {
   display: flex;
 }
 
@@ -93,7 +94,8 @@
 .about-div p,
 .about-div button,
 .skillset,
-.skillset li {
+.skillset li,
+.contact-section-header {
   font-family: var(--inter);
 }
 
