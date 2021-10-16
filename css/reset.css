@@ -31,7 +31,8 @@
 .inner-ul,
 .skills,
 .skills-flex,
-.inner-skills {
+.inner-skills,
+.form {
   display: flex;
 }
 

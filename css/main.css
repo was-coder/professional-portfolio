@@ -243,12 +243,15 @@
   margin-bottom: 60px;
 }
 
+.form {
+  flex-direction: column;
+}
+
 .input,
 .input-textarea {
   width: 100%;
   padding: 10px;
   font: 400 15px/24px 'Inter', sans-serif;
-  color: #979493;
   margin-bottom: 24px;
   border: none;
 }
