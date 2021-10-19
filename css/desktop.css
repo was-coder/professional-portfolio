@@ -1,162 +1,27 @@
-@media only screen and (min-width: 768px) {
-  /* start of header styling */
-  .logo-div {
-    padding: 0 100px;
-  }
-
-  .hamburger-nav {
-    display: none;
-  }
-
-  .nav {
-    display: block;
-  }
-
-  .nav-ul {
-    gap: 25px;
-    font-size: 1rem;
-  }
-
-  .nav-li {
-    list-style: none;
-  }
-
-  .nav-link {
-    text-decoration: none;
-  }
-
-  /* start of header styling */
-
-  /* start of home styling */
-  .main-container {
-    flex-direction: row-reverse;
-    align-items: center;
-    gap: 50px;
-    background-image: url(../image/Illustration-header.png);
-    background-position: right 0 top 0;
-  }
-
-  .main-container p {
-    width: 45%;
-  }
-
-  .svg-container {
-    flex-direction: column;
-  }
-
-  /* end of home styling */
-
+@media only screen and (min-width: 992px) {
   /* start of work styling */
-
-  .work {
-    min-height: 220vh;
-    position: relative;
-  }
-
-  .work-h2 {
-    text-align: start;
-    font-size: 2rem;
-  }
-
-  .underline {
-    position: absolute;
-    left: 265px;
-    top: 25px;
-    width: 65%;
-  }
-
-  .stories-div {
-    flex-direction: row;
-    gap: 20px;
-    margin-top: 70px;
-  }
-
-  .stories-div-img {
-    width: 50%;
-  }
-
   .stories-div div {
     width: 40%;
   }
 
   .work-grid {
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 30px;
   }
 
   /* end of work styling */
 
   /* start of about styling */
-  .about {
-    background-image: url(/image/about-me-desktop.png);
-    background-repeat: no-repeat;
-    background-size: 40%;
-    background-position: top 70px right;
-  }
-
-  .about-div {
-    margin: 0 70px;
-    width: 35%;
-  }
-
-  .about-underline {
-    width: 90%;
-  }
-
-  .about-div p {
-    line-height: 25px;
-  }
-
-  .skills {
-    background-image: none;
-  }
-
-  .skills-flex {
-    flex-direction: row;
-    justify-content: space-around;
-    align-self: stretch;
-    align-items: flex-start;
-  }
-
-  .skillset li {
-    text-align: start;
+  .about-div h2 {
+    font-size: 4.3rem;
   }
 
   /* end of about styling */
 
   /* start of contact and footer styling */
-  .contact-flex {
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
-
   .contact-section-header {
-    width: 25%;
-  }
-
-  .form {
-    width: 50%;
-  }
-
-  .text-input {
-    display: inline-block;
-    width: 45%;
-  }
-
-  #name {
-    display: none;
-  }
-
-  .contact-but {
-    place-items: start;
+    width: 30%;
+    font-size: 35px;
   }
 
   /* end of contact and footer styling */
-
-  /* start of footer styling */
-  .svg-footer-container {
-    flex-direction: row;
-  }
-
-  /* end of footer styling */
 }
