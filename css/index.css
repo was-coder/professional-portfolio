@@ -1,4 +1,4 @@
 @import './reset.css';
 @import './main.css';
-@import './tablet.css';
-@import './desktop.css';
+@import './tablet.css' screen and (min-width: 768px);
+@import './desktop.css' screen and (min-width: 992px);

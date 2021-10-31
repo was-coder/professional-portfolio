@@ -1,27 +1,25 @@
-@media only screen and (min-width: 992px) {
-  /* start of work styling */
-  .stories-div div {
-    width: 40%;
-  }
-
-  .work-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  /* end of work styling */
-
-  /* start of about styling */
-  .about-div h2 {
-    font-size: 4.3rem;
-  }
-
-  /* end of about styling */
-
-  /* start of contact and footer styling */
-  .contact-section-header {
-    width: 30%;
-    font-size: 35px;
-  }
-
-  /* end of contact and footer styling */
+/* start of work styling */
+.stories-div div {
+  width: 40%;
 }
+
+.work-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* end of work styling */
+
+/* start of about styling */
+.about-div h2 {
+  font-size: 4.3rem;
+}
+
+/* end of about styling */
+
+/* start of contact and footer styling */
+.contact-section-header {
+  width: 30%;
+  font-size: 35px;
+}
+
+/* end of contact and footer styling */
