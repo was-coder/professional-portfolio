@@ -16,29 +16,51 @@
     <div class="container">
       <!-- start of header section -->
       <header>
+        <!-- start of mobile list item -->
+
+        <div class="mobile-div" id="mobile-div">
+          <!-- start of hamburger cancel nav -->
+          <nav class="cancel-hamburger" id="cancel-hamburger">
+            <button type="submit" aria-label="Right Align" class="hamburger-button">
+              <i class="fas fa-times fa-2x"></i>
+            </button>
+          </nav>
+          <!-- end of hamburger cancel nav -->
+          <nav class="mobile-nav">
+            <ul class="mobile-nav-ul">
+              <li class="mobile-nav-li">
+                <a href="#portfolio" class="mobile-nav-link">Portfolio</a>
+              </li>
+              <li class="mobile-nav-li"><a href="#about" class="mobile-nav-link">About</a></li>
+              <li class="mobile-nav-li"><a href="#contact" class="mobile-nav-link">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        <!-- end of mobile list item -->
+
         <div class="logo-div">
           <a href="#" class="logo-link">my logo</a>
 
+          <!-- start of desktop nav list -->
+          <nav class="nav">
+            <ul class="nav-ul">
+              <li class="nav-li"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+              <li class="nav-li"><a href="#about" class="nav-link">About</a></li>
+              <li class="nav-li"><a href="#contact" class="nav-link">Contact</a></li>
+              <li class="nav-li">
+                <a href="#email" class="nav-link"><i class="fas fa-envelope envelope"></i></a>
+              </li>
+            </ul>
+          </nav>
+          <!-- end of desktop nav list -->
+
           <!-- start of hamburger nav -->
-          <nav class="hamburger-nav">
+          <nav class="hamburger-nav" id="hamburger-div">
             <button type="submit" aria-label="Right Align" class="hamburger-button">
               <i class="fas fa-bars fa-2x"></i>
             </button>
           </nav>
           <!-- end of hamburger nav -->
-
-          <!-- start of nav list -->
-          <nav class="nav">
-            <ul class="nav-ul">
-              <li class="nav-li"><a href="#" class="nav-link">Portfolio</a></li>
-              <li class="nav-li"><a href="#" class="nav-link">About</a></li>
-              <li class="nav-li"><a href="#" class="nav-link">Contact</a></li>
-              <li class="nav-li">
-                <a href="#" class="nav-link"><i class="fas fa-envelope envelope"></i></a>
-              </li>
-            </ul>
-          </nav>
-          <!-- end of nav list -->
         </div>
       </header>
       <!-- end of header section -->
@@ -83,7 +105,7 @@
     </div>
 
     <!-- start of work section -->
-    <section id="work" class="work">
+    <section id="portfolio" class="work">
       <div class="recent-work">
         <h2 class="work-h2">my recent works</h2>
         <hr class="underline" />
@@ -294,7 +316,7 @@
     <!-- end of about section -->
 
     <!-- start of contact and footer sections -->
-    <section class="contact-section">
+    <section id="contact" class="contact-section">
       <div class="contact-flex">
         <h2 class="contact-section-header">
           I'm always interested in hearing about new projects, so if you'd like to chat please get

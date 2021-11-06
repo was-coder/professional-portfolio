@@ -24,6 +24,10 @@
   text-decoration: none;
 }
 
+.mobile-div {
+  display: none;
+}
+
 /* start of header styling */
 
 /* start of home styling */
@@ -60,7 +64,7 @@
 .underline {
   position: absolute;
   left: 265px;
-  top: 25px;
+  top: 120px;
   width: 65%;
 }
 

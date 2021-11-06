@@ -26,6 +26,40 @@
   display: none;
 }
 
+.mobile-div {
+  display: none;
+  background: var(--primary);
+  height: 100vh;
+}
+
+.show {
+  display: block;
+}
+
+.mobile-nav-ul {
+  padding-top: 40px;
+}
+
+.mobile-nav-li {
+  padding: 25px 0 5px 10px;
+  list-style-type: none;
+  margin: 0 auto;
+  width: 95%;
+  border-bottom: 2px solid #6f6c6b;
+}
+
+.mobile-nav-link {
+  color: #fff;
+  font-size: 1.7rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.cancel-hamburger {
+  float: right;
+  padding: 20px;
+}
+
 /* end of header styling */
 
 /* start of home styling */
@@ -68,6 +102,7 @@
   min-height: 470vh;
   margin: 30px auto;
   width: 80%;
+  padding-top: 50px;
 }
 
 .work-h2 {
