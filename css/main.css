@@ -1,12 +1,12 @@
 /* start of header styling */
 .logo-div {
   background: var(--primary);
-  height: 50px;
+  min-height: 50px;
   justify-content: space-between;
   align-items: center;
+  z-index: 1;
   padding: 0 20px;
   position: fixed;
-  z-index: 1;
   width: 100%;
 }
 
@@ -28,8 +28,6 @@
 
 .mobile-div {
   display: none;
-  background: var(--primary);
-  height: 100vh;
 }
 
 .show {
@@ -37,7 +35,12 @@
 }
 
 .mobile-nav-ul {
+  background: var(--primary);
+  position: fixed;
+  z-index: 2;
+  height: 100vh;
   padding-top: 40px;
+  width: 100%;
 }
 
 .mobile-nav-li {
@@ -49,7 +52,6 @@
 }
 
 .mobile-nav-link {
-  color: #fff;
   font-size: 1.7rem;
   font-weight: bold;
   text-decoration: none;
@@ -57,9 +59,10 @@
 
 .cancel-hamburger {
   float: right;
-  padding: 20px;
+  position: absolute;
+  top: 15px;
+  right: 20px;
 }
-
 /* end of header styling */
 
 /* start of home styling */
@@ -157,8 +160,7 @@
 
 .inner-work {
   flex-direction: column;
-  background-image:
-    linear-gradient(to top, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.73)),
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.73)),
     url(../svg/professional.svg);
   background-position: center;
   background-repeat: no-repeat;
@@ -334,5 +336,4 @@
   border-top: 1px solid #dfe1e6;
   padding: 20px 0;
 }
-
 /* end of contact and footer styling */

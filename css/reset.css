@@ -84,7 +84,8 @@
 .inner-work-btn,
 .about-div button,
 .skillset,
-.nav-link {
+.nav-link,
+.mobile-nav-link {
   color: var(--secondary);
 }
 
