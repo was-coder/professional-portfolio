@@ -101,7 +101,7 @@
 
 /* start of work styling */
 .work {
-  min-height: 350vh;
+  min-height: 400vh;
   margin: 30px auto;
   width: 80%;
   padding-top: 50px;
@@ -211,7 +211,7 @@
 }
 
 .about-div h2 {
-  font-size: 3rem;
+  font-size: 4rem;
   letter-spacing: 4px;
 }
 
