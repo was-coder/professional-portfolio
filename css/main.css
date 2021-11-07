@@ -101,7 +101,7 @@
 
 /* start of work styling */
 .work {
-  min-height: 400vh;
+  min-height: 440vh;
   margin: 30px auto;
   width: 80%;
   padding-top: 50px;
@@ -250,7 +250,6 @@
 }
 
 .inner-skills {
-  gap: 15px;
   margin: 50px 0;
 }
 
@@ -259,6 +258,7 @@
 }
 
 .inner-skills img {
+  margin-right: 10px;
   padding-top: 4px;
 }
 
@@ -319,6 +319,7 @@
 
 .input-textarea {
   background-color: #fbf8f7;
+  height: 200px;
 }
 
 .input:focus,
