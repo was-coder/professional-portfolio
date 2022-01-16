@@ -260,7 +260,7 @@
   justify-content: space-between;
 }
 
-.popup-button button {
+.popup-button-div {
   background-color: #ff6b00;
   border: 1px solid #ff6b00;
   padding: 10px;
@@ -268,11 +268,11 @@
   margin: 10px 0;
 }
 
-.popup-button button a {
+.popup-button-div a {
   margin-right: 10px;
   text-decoration: none;
   color: #fff;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .overall-container#blur.active {
