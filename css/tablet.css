@@ -95,6 +95,14 @@
   grid-gap: 30px;
 }
 
+/* Start of pop-up */
+.popup {
+  width: 370px;
+  padding: 10px 20px;
+}
+
+/* End of pop-up */
+
 /* end of work styling */
 
 /* start of about styling */

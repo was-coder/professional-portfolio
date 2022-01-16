@@ -101,7 +101,7 @@
 
 /* start of work styling */
 .work {
-  min-height: 440vh;
+  min-height: 420vh;
   margin: 30px auto;
   width: 80%;
   padding-top: 50px;
@@ -197,6 +197,96 @@
   text-transform: capitalize;
 }
 
+/* start of popup styling */
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 335px;
+  background-color: #fff;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.52);
+  padding: 10px;
+}
+
+.multi-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.popup-img {
+  min-width: 311px;
+  min-height: 220px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.multi-div h3 {
+  font-size: 25px;
+}
+
+.multi-div button {
+  border: none;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.list-div {
+  margin: 20px 0;
+}
+
+.list-div ol {
+  display: flex;
+  list-style-type: none;
+}
+
+.list-div ol li {
+  border: 1px solid #000;
+  font-size: 16px;
+  margin-right: 10px;
+  padding: 5px 10px;
+}
+
+.text-div {
+  margin: 10px auto;
+}
+
+.text-div p {
+  font-size: 18px;
+}
+
+.popup-button {
+  display: flex;
+  justify-content: space-between;
+}
+
+.popup-button button {
+  background-color: #ff6b00;
+  border: 1px solid #ff6b00;
+  padding: 10px;
+  display: flex;
+  margin: 10px 0;
+}
+
+.popup-button button a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+.overall-container#blur.active {
+  filter: blur(5px);
+  pointer-events: none;
+  user-select: none;
+}
+
+#popup.active {
+  transform: translate(-50%, -50%);
+}
+
+/* end of popup styling */
+
 /* end of work styling */
 
 /* start of about styling */
@@ -253,7 +343,7 @@
   margin: 50px 0;
 }
 
-.inner-skills li {
+.inner-skills ol li {
   list-style: none;
 }
 
@@ -267,7 +357,7 @@
   text-transform: capitalize;
 }
 
-.skillset li {
+.skillset ol li {
   font-size: 1.2rem;
   text-align: center;
   padding-top: 40px;
