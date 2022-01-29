@@ -160,8 +160,7 @@
 
 .inner-work {
   flex-direction: column;
-  background-image:
-    linear-gradient(to top, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.73)),
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.73)),
     url(../svg/professional.svg);
   background-position: center;
   background-repeat: no-repeat;
@@ -303,6 +302,10 @@
   border: none;
 }
 
+#email {
+  margin-bottom: 5px;
+}
+
 .input,
 .input-textarea {
   display: block;
@@ -328,7 +331,42 @@
   outline: none;
 }
 
-.contact-but,
+.form-control {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.form-control .error,
+.form-control .success {
+  position: absolute;
+  top: 25%;
+  left: 85%;
+  visibility: hidden;
+}
+
+.form-control small {
+  visibility: hidden;
+  margin-top: 50px;
+  padding-left: 10px;
+  font-size: 12px;
+}
+
+.getSuccess .success {
+  color: #32cd32;
+  visibility: visible;
+}
+
+.getError .error {
+  color: #ff6b00;
+  visibility: visible;
+}
+
+.getError small {
+  color: #ff6b00;
+  visibility: visible;
+}
+
+.form .contact-but,
 .footer {
   display: grid;
   place-items: center;

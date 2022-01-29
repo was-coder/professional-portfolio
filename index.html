@@ -325,7 +325,7 @@
           in touch.
         </h2>
 
-        <form action="https://formspree.io/f/xeqvdwpz" method="POST" class="form">
+        <form action="https://formspree.io/f/xeqvdwpz" method="POST" id="form" class="form">
           <input
             type="text"
             name="name"
@@ -333,7 +333,6 @@
             placeholder="Full Name"
             maxlength="30"
             class="input"
-            required
           />
           <input
             type="text"
@@ -342,7 +341,6 @@
             placeholder="First Name"
             maxlength="30"
             class="text-input"
-            required
           />
           <input
             type="text"
@@ -351,27 +349,28 @@
             placeholder="Last Name"
             maxlength="30"
             class="text-input"
-            required
           />
-          <input
-            type="email"
-            name="_replyto"
-            id="email"
-            placeholder="Enter your Email"
-            class="input"
-            required
-          />
+          <div class="form-control">
+            <input
+              type="email"
+              name="_replyto"
+              id="email"
+              placeholder="Enter your Email"
+              class="input"
+            />
+            <i class="fas fa-exclamation-circle error"></i>
+            <i class="fas fa-check-circle success"></i>
+            <small>Error Message</small>
+          </div>
+
           <textarea
             name="message"
             id="message"
             placeholder="Enter text here"
             maxlength="500"
             class="input-textarea"
-            required
           ></textarea>
-          <div class="contact-but">
-            <button type="submit" class="stories-button button">Get in touch</button>
-          </div>
+          <button class="stories-button button">Get in touch</button>
         </form>
       </div>
     </section>

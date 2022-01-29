@@ -72,3 +72,5 @@ eslint:
     - name: Install required dependency for node
       run: |
         npm install
+    - name: ESLint Report
+      run: npm run eslint:check

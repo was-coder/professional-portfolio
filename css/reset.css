@@ -113,3 +113,7 @@
   color: #f55800;
   border: 1px solid #f55800;
 }
+
+.button:focus {
+  outline: none;
+}
