@@ -12,16 +12,20 @@
 }
 
 .nav-ul {
-  gap: 25px;
   font-size: 1rem;
 }
 
 .nav-li {
+  padding-left: 20px;
   list-style: none;
 }
 
 .nav-link {
   text-decoration: none;
+}
+
+.mobile-div {
+  display: none;
 }
 
 /* start of header styling */
@@ -30,7 +34,6 @@
 .main-container {
   flex-direction: row-reverse;
   align-items: center;
-  gap: 50px;
   background-image: url(../image/Illustration-header.png);
   background-position: right 0 top 50px;
   background-size: 60%;
@@ -42,6 +45,11 @@
 
 .svg-container {
   flex-direction: column;
+  padding-right: 50px;
+}
+
+.svg-container a {
+  padding-top: 20px;
 }
 
 /* end of home styling */
@@ -60,18 +68,18 @@
 .underline {
   position: absolute;
   left: 265px;
-  top: 25px;
+  top: 120px;
   width: 65%;
 }
 
 .stories-div {
   flex-direction: row;
-  gap: 20px;
   margin-top: 70px;
 }
 
 .stories-div-img {
   width: 50%;
+  margin-right: 30px;
 }
 
 .stories-div h3 {
