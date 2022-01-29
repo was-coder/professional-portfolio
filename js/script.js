@@ -1,33 +1,21 @@
-// Start of event listeners variables
-let mobileMenu = document.getElementById('hamburger-div');
-let mobileMenuCancel = document.getElementById('cancel-hamburger');
-let mobileMenuCancel1 = document.getElementById('cancel-butt1');
-let mobileMenuCancel2 = document.getElementById('cancel-butt2');
-let mobileMenuCancel3 = document.getElementById('cancel-butt3');
-let buttonClick = document.querySelectorAll('.button');
-let cancelButton = document.querySelector('.cancel');
-// End of event listeners variables
+const mobileMenu = document.querySelector('#hamburger-div');
+const buttonClick = document.querySelectorAll('.button');
+const cancelButton = document.querySelector('.cancel');
 
-// start of hamburger toggle
-mobileMenu.addEventListener('click', () => {
-  document.querySelector('.mobile-div').classList.add('show');
+const toggleShowClass = () => {
+  document.querySelector('.mobileDiv').classList.toggle('show');
+};
+
+mobileMenu.addEventListener('click', toggleShowClass);
+
+const cancelMobile = document.querySelectorAll('.hamburger');
+
+cancelMobile.forEach(x => {
+  x.addEventListener('click', toggleShowClass);
 });
-mobileMenuCancel.addEventListener('click', () => {
-  document.querySelector('.mobile-div').classList.remove('show');
-});
-mobileMenuCancel1.addEventListener('click', () => {
-  document.querySelector('.mobile-div').classList.remove('show');
-});
-mobileMenuCancel2.addEventListener('click', () => {
-  document.querySelector('.mobile-div').classList.remove('show');
-});
-mobileMenuCancel3.addEventListener('click', () => {
-  document.querySelector('.mobile-div').classList.remove('show');
-});
-// End of hamburger toggle
 
 // Start of project information
-let information = [
+const information = [
   {
     name: 'Professional',
     description:
@@ -90,33 +78,33 @@ let information = [
 // End of project information
 
 // Start of including project information inside popup
-function toggle(i) {
+function getInfo(i) {
   document.querySelector('.name').innerText = information[i].name;
-  document.getElementById('description').innerText = information[i].description;
+  document.querySelector('#description').innerText = information[i].description;
   document.querySelector('.technology').innerHTML = information[i].technology;
-  document.getElementById('live').href = information[i].live;
-  document.getElementById('source').href = information[i].source;
-  document.getElementById('image').style.backgroundImage = information[i].image;
+  document.querySelector('#live').href = information[i].live;
+  document.querySelector('#source').href = information[i].source;
+  document.querySelector('#image').style.backgroundImage = information[i].image;
 }
 // End of including project information inside popup
 
+const blurAll = document.querySelector('#blurAll');
+const popup = document.querySelector('#popup');
+
+const safe = () => {
+  blurAll.classList.toggle('active');
+  popup.classList.toggle('active');
+};
+
 // Start of calling the popup functions
-for (let i = 0; i < information.length; i++) {
+for (let i = 0; i < information.length; i += 1) {
   buttonClick[i].addEventListener('click', () => {
-    toggle(i);
-
-    var blur = document.getElementById('blur');
-    blur.classList.toggle('active');
-
-    var popup = document.getElementById('popup');
-    popup.classList.toggle('active');
+    getInfo(i);
+    safe();
   });
 }
 // Ending of calling the popup functions
 
 // Start of removing popup
-cancelButton.addEventListener('click', () => {
-  popup.classList.remove('active');
-  document.getElementById('blur').classList.remove('active');
-});
+cancelButton.addEventListener('click', safe);
 // End of removing popup

@@ -20,13 +20,17 @@
 .hamburger-button {
   background: transparent;
   border: none;
+  float: right;
+  position: absolute;
+  top: 15px;
+  right: 20px;
 }
 
 .nav {
   display: none;
 }
 
-.mobile-div {
+.mobileDiv {
   display: none;
   background: var(--primary);
   position: fixed;
@@ -37,6 +41,10 @@
 
 .show {
   display: block;
+}
+
+.Noshow {
+  display: none;
 }
 
 .mobile-nav-ul {
@@ -55,13 +63,6 @@
   font-size: 1.7rem;
   font-weight: bold;
   text-decoration: none;
-}
-
-.cancel-hamburger {
-  float: right;
-  position: absolute;
-  top: 15px;
-  right: 20px;
 }
 
 /* end of header styling */
@@ -275,7 +276,7 @@
   font-size: 20px;
 }
 
-.overall-container#blur.active {
+.overall-container#blurAll.active {
   filter: blur(5px);
   pointer-events: none;
   user-select: none;
