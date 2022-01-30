@@ -160,8 +160,7 @@
 
 .inner-work {
   flex-direction: column;
-  background-image:
-    linear-gradient(to top, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.73)),
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.73)),
     url(../svg/professional.svg);
   background-position: center;
   background-repeat: no-repeat;
@@ -344,7 +343,7 @@
   margin: 50px 0;
 }
 
-.inner-skills ol li {
+.inner-skills ul li {
   list-style: none;
 }
 
@@ -358,7 +357,7 @@
   text-transform: capitalize;
 }
 
-.skillset ol li {
+.skillset ul li {
   font-size: 1.2rem;
   text-align: center;
   padding-top: 40px;
