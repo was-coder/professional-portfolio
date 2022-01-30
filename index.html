@@ -13,393 +13,453 @@
     <script async src="https://kit.fontawesome.com/b32460d9a8.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <div class="container">
-      <!-- start of header section -->
-      <header>
-        <!-- start of mobile list item -->
+    <div class="overall-container" id="blurAll">
+      <div class="container">
+        <!-- start of header section -->
+        <header>
+          <!-- start of mobile list item -->
 
-        <div class="mobileDiv">
-          <nav class="mobile-nav">
-            <!-- start of hamburger cancel nav -->
-            <button type="submit" aria-label="Right Align" class="hamburger-button hamburger">
-              <i class="fas fa-times fa-2x"></i>
-            </button>
-            <!-- end of hamburger cancel nav -->
-            <ul class="mobile-nav-ul">
-              <li class="mobile-nav-li">
-                <a href="#portfolio" class="mobile-nav-link hamburger">Portfolio</a>
-              </li>
-              <li class="mobile-nav-li">
-                <a href="#about" class="mobile-nav-link hamburger">About</a>
-              </li>
-              <li class="mobile-nav-li">
-                <a href="#contact" class="mobile-nav-link hamburger">Contact</a>
-              </li>
-            </ul>
-          </nav>
+          <div class="mobile-div mobileDiv" id="mobile-div">
+            <nav class="mobile-nav">
+              <!-- start of hamburger cancel nav -->
+              <button
+                type="submit"
+                aria-label="Right Align"
+                class="hamburger-button cancel-hamburger"
+                id="cancel-hamburger"
+              >
+                <i class="fas fa-times fa-2x"></i>
+              </button>
+              <!-- end of hamburger cancel nav -->
+              <ul class="mobile-nav-ul">
+                <li class="mobile-nav-li">
+                  <a href="#portfolio" class="mobile-nav-link hamburger">Portfolio</a>
+                </li>
+                <li class="mobile-nav-li">
+                  <a href="#about" class="mobile-nav-link hamburger">About</a>
+                </li>
+                <li class="mobile-nav-li">
+                  <a href="#contact" class="mobile-nav-link hamburger">Contact</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-- end of mobile list item -->
+
+          <div class="logo-div">
+            <a href="#" class="logo-link">my logo</a>
+
+            <!-- start of desktop nav list -->
+            <nav class="nav">
+              <ul class="nav-ul">
+                <li class="nav-li"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li class="nav-li"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-li"><a href="#contact" class="nav-link">Contact</a></li>
+                <li class="nav-li">
+                  <a href="#email" class="nav-link"><i class="fas fa-envelope envelope"></i></a>
+                </li>
+              </ul>
+            </nav>
+            <!-- end of desktop nav list -->
+
+            <!-- start of hamburger nav -->
+            <nav class="hamburger-nav" id="hamburger-div">
+              <button type="submit" aria-label="Right Align" class="hamburger-button">
+                <i class="fas fa-bars fa-2x"></i>
+              </button>
+            </nav>
+            <!-- end of hamburger nav -->
+          </div>
+        </header>
+        <!-- end of header section -->
+
+        <!-- start of home section -->
+        <main id="home" class="home">
+          <div class="main-container">
+            <div>
+              <h1>hey there.<br />i'm wasiu</h1>
+              <h2>I'am a Software Developer</h2>
+              <p>
+                I can help you build a product, feature or website. Look through some of my work and
+                experience! If you like what you see and have a project you need coded, don’t
+                hesitate to contact me.
+              </p>
+            </div>
+
+            <div class="svg-container svg-home-container">
+              <a href="https://github.com/was-coder">
+                <img src="/svg/github.svg" alt="Github logo" width="25" height="25" />
+              </a>
+
+              <a href="https://www.linkedin.com/in/wasiu-adelakun-1a2a5b1a6/">
+                <img src="/svg/linkedin.svg" alt="linkedin logo" width="25" height="25" />
+              </a>
+
+              <a href="#">
+                <img src="/svg/hand.svg" alt="hand logo" width="25" height="25" />
+              </a>
+
+              <a href="https://twitter.com/devwaslead">
+                <img src="/svg/twitter.svg" alt="twitter logo" width="25" height="25" />
+              </a>
+
+              <a href="#">
+                <img src="/svg/m.svg" alt="m logo" width="25" height="25" />
+              </a>
+            </div>
+          </div>
+        </main>
+        <!-- end of home section -->
+      </div>
+
+      <!-- start of work section -->
+      <section id="portfolio" class="work">
+        <div class="recent-work">
+          <h2 class="work-h2">my recent works</h2>
+          <hr class="underline" />
         </div>
-        <!-- end of mobile list item -->
 
-        <div class="logo-div">
-          <a href="#" class="logo-link">my logo</a>
+        <div class="stories-div">
+          <img
+            src="/image/Placeholder.jpg"
+            alt="Gym fitness trainer"
+            class="stories-div-img"
+            width="327"
+            height="237"
+          />
 
-          <!-- start of desktop nav list -->
-          <nav class="nav">
-            <ul class="nav-ul">
-              <li class="nav-li"><a href="#portfolio" class="nav-link">Portfolio</a></li>
-              <li class="nav-li"><a href="#about" class="nav-link">About</a></li>
-              <li class="nav-li"><a href="#contact" class="nav-link">Contact</a></li>
-              <li class="nav-li">
-                <a href="#email" class="nav-link"><i class="fas fa-envelope envelope"></i></a>
-              </li>
-            </ul>
-          </nav>
-          <!-- end of desktop nav list -->
-
-          <!-- start of hamburger nav -->
-          <nav class="hamburger-nav hamburger-div">
-            <button type="submit" aria-label="Right Align" class="hamburger-button">
-              <i class="fas fa-bars fa-2x"></i>
-            </button>
-          </nav>
-          <!-- end of hamburger nav -->
-        </div>
-      </header>
-      <!-- end of header section -->
-
-      <!-- start of home section -->
-      <main id="home" class="home">
-        <div class="main-container">
           <div>
-            <h1>hey there.<br />i'm wasiu</h1>
-            <h2>I'am a Software Developer</h2>
+            <h3>multi-post stories</h3>
             <p>
-              I can help you build a product, feature or website. Look through some of my work and
-              experience! If you like what you see and have a project you need coded, don’t hesitate
-              to contact me.
+              A daily selection of privately personalized reads; no accounts or sign-ups required.
+              has been the industry's standard dummy text ever since the 1500s, when an unknown
+              printer took a standard dummy text.
             </p>
-          </div>
-
-          <div class="svg-container svg-home-container">
-            <a href="https://github.com/was-coder">
-              <img src="/svg/github.svg" alt="Github logo" width="25" height="25" />
-            </a>
-
-            <a href="https://www.linkedin.com/in/wasiu-adelakun-1a2a5b1a6/">
-              <img src="/svg/linkedin.svg" alt="linkedin logo" width="25" height="25" />
-            </a>
-
-            <a href="#">
-              <img src="/svg/hand.svg" alt="hand logo" width="25" height="25" />
-            </a>
-
-            <a href="https://twitter.com/devwaslead">
-              <img src="/svg/twitter.svg" alt="twitter logo" width="25" height="25" />
-            </a>
-
-            <a href="#">
-              <img src="/svg/m.svg" alt="m logo" width="25" height="25" />
-            </a>
+            <ul class="stories-div-ul">
+              <li>css</li>
+              <li>html</li>
+              <li>bootstrap</li>
+              <li>Ruby</li>
+            </ul>
+            <button type="button" class="stories-button button">
+              see project
+            </button>
           </div>
         </div>
-      </main>
-      <!-- end of home section -->
-    </div>
 
-    <!-- start of work section -->
-    <section id="portfolio" class="work">
-      <div class="recent-work">
-        <h2 class="work-h2">my recent works</h2>
-        <hr class="underline" />
-      </div>
+        <!-- work grid part -->
+        <div class="work-grid">
+          <div class="inner-work">
+            <div class="inner-work-text">
+              <h3>professional art <br />printing data</h3>
+              <p>
+                A daily selection of privately personalized reads; no accounts or sign-ups required.
+                has been the industry's standard
+              </p>
+              <ul class="inner-ul">
+                <li>html</li>
+                <li>bootstrap</li>
+                <li>Ruby</li>
+              </ul>
+            </div>
+            <button type="button" class="inner-work-btn button">
+              see projects
+            </button>
+          </div>
 
-      <div class="stories-div">
-        <img
-          src="/image/Placeholder.jpg"
-          alt="Gym fitness trainer"
-          class="stories-div-img"
-          width="327"
-          height="237"
-        />
+          <div class="inner-work">
+            <div class="inner-work-text">
+              <h3>professional art <br />printing data</h3>
+              <p>
+                A daily selection of privately personalized reads; no accounts or sign-ups required.
+                has been the industry's standard
+              </p>
+              <ul class="inner-ul">
+                <li>html</li>
+                <li>bootstrap</li>
+                <li>Ruby</li>
+              </ul>
+            </div>
+            <button type="button" class="inner-work-btn button">
+              see projects
+            </button>
+          </div>
 
-        <div>
-          <h3>multi-post stories</h3>
+          <div class="inner-work">
+            <div class="inner-work-text">
+              <h3>professional art <br />printing data</h3>
+              <p>
+                A daily selection of privately personalized reads; no accounts or sign-ups required.
+                has been the industry's standard
+              </p>
+              <ul class="inner-ul">
+                <li>html</li>
+                <li>bootstrap</li>
+                <li>Ruby</li>
+              </ul>
+            </div>
+            <button type="button" class="inner-work-btn button">
+              see projects
+            </button>
+          </div>
+
+          <div class="inner-work">
+            <div class="inner-work-text">
+              <h3>professional art <br />printing data</h3>
+              <p>
+                A daily selection of privately personalized reads; no accounts or sign-ups required.
+                has been the industry's standard
+              </p>
+              <ul class="inner-ul">
+                <li>html</li>
+                <li>bootstrap</li>
+                <li>Ruby</li>
+              </ul>
+            </div>
+            <button type="button" class="inner-work-btn button">
+              see projects
+            </button>
+          </div>
+
+          <div class="inner-work">
+            <div class="inner-work-text">
+              <h3>professional art <br />printing data</h3>
+              <p>
+                A daily selection of privately personalized reads; no accounts or sign-ups required.
+                has been the industry's standard
+              </p>
+              <ul class="inner-ul">
+                <li>html</li>
+                <li>bootstrap</li>
+                <li>Ruby</li>
+              </ul>
+            </div>
+            <button type="button" class="inner-work-btn button">
+              see projects
+            </button>
+          </div>
+
+          <div class="inner-work">
+            <div class="inner-work-text">
+              <h3>professional art <br />printing data</h3>
+              <p>
+                A daily selection of privately personalized reads; no accounts or sign-ups required.
+                has been the industry's standard
+              </p>
+              <ul class="inner-ul">
+                <li>html</li>
+                <li>bootstrap</li>
+                <li>Ruby</li>
+              </ul>
+            </div>
+            <button type="button" class="inner-work-btn button">
+              see projects
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- end of work section -->
+
+      <!-- start of about section -->
+      <section id="about" class="about">
+        <div class="about-div">
+          <h2>About me</h2>
           <p>
-            A daily selection of privately personalized reads; no accounts or sign-ups required. has
-            been the industry's standard dummy text ever since the 1500s, when an unknown printer
-            took a standard dummy text.
+            Hello I’m a software developer! I can help you build a product , feature or website Look
+            through some of my work and experience! If you like what you see and have a project you
+            need coded, don’t hestiate to contact me.
           </p>
-          <ul class="stories-div-ul">
-            <li>css</li>
-            <li>html</li>
-            <li>bootstrap</li>
-            <li>Ruby</li>
-          </ul>
-          <button type="button" class="stories-button button">see project</button>
-        </div>
-      </div>
-
-      <!-- work grid part -->
-      <div class="work-grid">
-        <div class="inner-work">
-          <div class="inner-work-text">
-            <h3>professional art <br />printing data</h3>
-            <p>
-              A daily selection of privately personalized reads; no accounts or sign-ups required.
-              has been the industry's standard
-            </p>
-            <ul class="inner-ul">
-              <li>html</li>
-              <li>bootstrap</li>
-              <li>Ruby</li>
-            </ul>
-          </div>
-          <button type="button" class="inner-work-btn button">see projects</button>
+          <button type="button" class="button">get my resume</button>
         </div>
 
-        <div class="inner-work">
-          <div class="inner-work-text">
-            <h3>professional art <br />printing data</h3>
-            <p>
-              A daily selection of privately personalized reads; no accounts or sign-ups required.
-              has been the industry's standard
-            </p>
-            <ul class="inner-ul">
-              <li>html</li>
-              <li>bootstrap</li>
-              <li>Ruby</li>
-            </ul>
-          </div>
-          <button type="button" class="inner-work-btn button">see projects</button>
-        </div>
+        <!-- languages and frameworks part -->
+        <div class="skills">
+          <hr class="about-underline" />
 
-        <div class="inner-work">
-          <div class="inner-work-text">
-            <h3>professional art <br />printing data</h3>
-            <p>
-              A daily selection of privately personalized reads; no accounts or sign-ups required.
-              has been the industry's standard
-            </p>
-            <ul class="inner-ul">
-              <li>html</li>
-              <li>bootstrap</li>
-              <li>Ruby</li>
-            </ul>
-          </div>
-          <button type="button" class="inner-work-btn button">see projects</button>
-        </div>
+          <div class="skills-flex">
+            <div class="inner-skills">
+              <div>
+                <img src="./image/shape1.png" alt="Kite shape" width="25" height="30" />
+              </div>
 
-        <div class="inner-work">
-          <div class="inner-work-text">
-            <h3>professional art <br />printing data</h3>
-            <p>
-              A daily selection of privately personalized reads; no accounts or sign-ups required.
-              has been the industry's standard
-            </p>
-            <ul class="inner-ul">
-              <li>html</li>
-              <li>bootstrap</li>
-              <li>Ruby</li>
-            </ul>
-          </div>
-          <button type="button" class="inner-work-btn button">see projects</button>
-        </div>
-
-        <div class="inner-work">
-          <div class="inner-work-text">
-            <h3>professional art <br />printing data</h3>
-            <p>
-              A daily selection of privately personalized reads; no accounts or sign-ups required.
-              has been the industry's standard
-            </p>
-            <ul class="inner-ul">
-              <li>html</li>
-              <li>bootstrap</li>
-              <li>Ruby</li>
-            </ul>
-          </div>
-          <button type="button" class="inner-work-btn button">see projects</button>
-        </div>
-
-        <div class="inner-work">
-          <div class="inner-work-text">
-            <h3>professional art <br />printing data</h3>
-            <p>
-              A daily selection of privately personalized reads; no accounts or sign-ups required.
-              has been the industry's standard
-            </p>
-            <ul class="inner-ul">
-              <li>html</li>
-              <li>bootstrap</li>
-              <li>Ruby</li>
-            </ul>
-          </div>
-          <button type="button" class="inner-work-btn button">see projects</button>
-        </div>
-      </div>
-    </section>
-    <!-- end of work section -->
-
-    <!-- start of about section -->
-    <section id="about" class="about">
-      <div class="about-div">
-        <h2>About me</h2>
-        <p>
-          Hello I’m a software developer! I can help you build a product , feature or website Look
-          through some of my work and experience! If you like what you see and have a project you
-          need coded, don’t hestiate to contact me.
-        </p>
-        <button type="button" class="button">get my resume</button>
-      </div>
-
-      <!-- languages and frameworks part -->
-      <div class="skills">
-        <hr class="about-underline" />
-
-        <div class="skills-flex">
-          <div class="inner-skills">
-            <div>
-              <img src="./image/shape1.png" alt="Kite shape" width="25" height="30" />
+              <ul>
+                <li class="skillset">
+                  language
+                  <ul>
+                    <li>Javascript</li>
+                    <li>Ruby</li>
+                    <li>Html</li>
+                    <li>Css</li>
+                  </ul>
+                </li>
+              </ul>
             </div>
 
-            <ul>
-              <li class="skillset">
-                language
-                <ul>
-                  <li>Javascript</li>
-                  <li>Ruby</li>
-                  <li>Html</li>
-                  <li>Css</li>
-                </ul>
-              </li>
-            </ul>
-          </div>
+            <div class="inner-skills">
+              <div>
+                <img src="./image/shape2.png" alt="rectangle shape" width="20" height="25" />
+              </div>
 
-          <div class="inner-skills">
-            <div>
-              <img src="./image/shape2.png" alt="rectangle shape" width="20" height="25" />
+              <ul>
+                <li class="skillset">
+                  frameworks
+                  <ul>
+                    <li>Bootstrap</li>
+                    <li>Ruby on Rails</li>
+                    <li>RSPec</li>
+                    <li>CapyBara</li>
+                    <li>Selenium</li>
+                  </ul>
+                </li>
+              </ul>
             </div>
 
-            <ul>
-              <li class="skillset">
-                frameworks
-                <ul>
-                  <li>Bootstrap</li>
-                  <li>Ruby on Rails</li>
-                  <li>RSPec</li>
-                  <li>CapyBara</li>
-                  <li>Selenium</li>
-                </ul>
-              </li>
-            </ul>
-          </div>
+            <div class="inner-skills">
+              <div>
+                <img src="./image/shape3.png" alt="circle shape" width="20" height="25" />
+              </div>
 
-          <div class="inner-skills">
-            <div>
-              <img src="./image/shape3.png" alt="circle shape" width="20" height="25" />
+              <ul>
+                <li class="skillset">
+                  skills
+                  <ul>
+                    <li>Codekit</li>
+                    <li>Github</li>
+                    <li>Codepen</li>
+                    <li>Gitlab</li>
+                    <li>Terminal</li>
+                  </ul>
+                </li>
+              </ul>
             </div>
+          </div>
+        </div>
+      </section>
+      <!-- end of about section -->
 
-            <ul>
-              <li class="skillset">
-                skills
-                <ul>
-                  <li>Codekit</li>
-                  <li>Github</li>
-                  <li>Codepen</li>
-                  <li>Gitlab</li>
-                  <li>Terminal</li>
-                </ul>
-              </li>
-            </ul>
+      <!-- start of contact and footer sections -->
+      <section id="contact" class="contact-section">
+        <div class="contact-flex">
+          <h2 class="contact-section-header">
+            I'm always interested in hearing about new projects, so if you'd like to chat please get
+            in touch.
+          </h2>
+
+          <form action="https://formspree.io/f/xeqvdwpz" method="POST" class="form">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Full Name"
+              maxlength="30"
+              class="input"
+              required
+            />
+            <input
+              type="text"
+              name="fname"
+              id="fname"
+              placeholder="First Name"
+              maxlength="30"
+              class="text-input"
+              required
+            />
+            <input
+              type="text"
+              name="lname"
+              id="lname"
+              placeholder="Last Name"
+              maxlength="30"
+              class="text-input"
+              required
+            />
+            <input
+              type="email"
+              name="_replyto"
+              id="email"
+              placeholder="Enter your Email"
+              class="input"
+              required
+            />
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Enter text here"
+              maxlength="500"
+              class="input-textarea"
+              required
+            ></textarea>
+            <div class="contact-but">
+              <button type="submit" class="stories-button button">Get in touch</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="svg-container svg-footer-container">
+          <a href="https://github.com/was-coder">
+            <img src="/svg/github.svg" alt="github logo" width="25" height="25" />
+          </a>
+
+          <a href="https://www.linkedin.com/in/wasiu-adelakun-1a2a5b1a6/">
+            <img src="/svg/linkedin.svg" alt="linkedin logo" width="25" height="25" />
+          </a>
+
+          <a href="#">
+            <img src="/svg/hand.svg" alt="hand logo" width="25" height="25" />
+          </a>
+
+          <a href="https://twitter.com/devwaslead">
+            <img src="/svg/twitter.svg" alt="twitter logo" width="25" height="25" />
+          </a>
+
+          <a href="#">
+            <img src="/svg/m.svg" alt="m logo" width="25" height="25" />
+          </a>
+        </div>
+      </footer>
+      <!-- end of contact and footer sections -->
+    </div>
+    <!-- Start of Pop-up -->
+    <div class="popup" id="popup">
+      <div class="multi-div">
+        <h3 class="name">Multi Post Stories</h3>
+        <button type="button" class="cancel">
+          <img src="/svg/close.svg" alt="cancel button" class="image" />
+        </button>
+      </div>
+
+      <div class="list-div">
+        <ol class="technology">
+          <li>Html</li>
+          <li>Bootstrap</li>
+          <li>Ruby on Rails</li>
+        </ol>
+      </div>
+
+      <div class="main-div">
+        <div class="popup-img" id="image"></div>
+        <div class="text-div">
+          <p id="description">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed eveniet velit alias
+            deserunt enim recusandae? Ipsa, unde, vel enim molestiae cumque incidunt dolorem nihil,
+            ullam provident voluptate libero aliquid eligendi.
+          </p>
+          <div class="popup-button">
+            <div class="popup-button-div">
+              <a href="" target="_blank" id="live">See Live</a>
+              <img src="/svg/Icon.svg" alt="see live" />
+            </div>
+            <div class="popup-button-div">
+              <a href="" target="_blank" id="source">See Source</a>
+              <img src="/svg/github.svg" alt="github" />
+            </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- end of about section -->
-
-    <!-- start of contact and footer sections -->
-    <section id="contact" class="contact-section">
-      <div class="contact-flex">
-        <h2 class="contact-section-header">
-          I'm always interested in hearing about new projects, so if you'd like to chat please get
-          in touch.
-        </h2>
-
-        <form action="https://formspree.io/f/xeqvdwpz" method="POST" class="form">
-          <input
-            type="text"
-            name="name"
-            id="name"
-            placeholder="Full Name"
-            maxlength="30"
-            class="input"
-            required
-          />
-          <input
-            type="text"
-            name="fname"
-            id="fname"
-            placeholder="First Name"
-            maxlength="30"
-            class="text-input"
-            required
-          />
-          <input
-            type="text"
-            name="lname"
-            id="lname"
-            placeholder="Last Name"
-            maxlength="30"
-            class="text-input"
-            required
-          />
-          <input
-            type="email"
-            name="_replyto"
-            id="email"
-            placeholder="Enter your Email"
-            class="input"
-            required
-          />
-          <textarea
-            name="message"
-            id="message"
-            placeholder="Enter text here"
-            maxlength="500"
-            class="input-textarea"
-            required
-          ></textarea>
-          <div class="contact-but">
-            <button type="submit" class="stories-button button">Get in touch</button>
-          </div>
-        </form>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <div class="svg-container svg-footer-container">
-        <a href="https://github.com/was-coder">
-          <img src="/svg/github.svg" alt="github logo" width="25" height="25" />
-        </a>
-
-        <a href="https://www.linkedin.com/in/wasiu-adelakun-1a2a5b1a6/">
-          <img src="/svg/linkedin.svg" alt="linkedin logo" width="25" height="25" />
-        </a>
-
-        <a href="#">
-          <img src="/svg/hand.svg" alt="hand logo" width="25" height="25" />
-        </a>
-
-        <a href="https://twitter.com/devwaslead">
-          <img src="/svg/twitter.svg" alt="twitter logo" width="25" height="25" />
-        </a>
-
-        <a href="#">
-          <img src="/svg/m.svg" alt="m logo" width="25" height="25" />
-        </a>
-      </div>
-    </footer>
-    <!-- end of contact and footer sections -->
+    </div>
+    <!--End of  Pop-up -->
     <script src="/js/script.js"></script>
   </body>
 </html>
