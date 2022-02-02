@@ -147,10 +147,14 @@
 }
 
 .stories-button {
-  padding: 10px 15px;
+  padding: 10px 5px;
   font-size: 1rem;
   text-transform: capitalize;
   border: none;
+  display: block;
+  margin: 0 auto;
+  width: 30%;
+  text-align: center;
 }
 
 .work-grid {
@@ -389,22 +393,18 @@
 .text-input {
   padding: 10px;
   font: 400 15px/24px 'Inter', sans-serif;
-  margin-bottom: 24px;
   border: none;
+  margin-bottom: 25px;
 }
 
 #email {
-  margin-bottom: 5px;
+  margin-bottom: 0;
 }
 
 .input,
 .input-textarea {
   display: block;
   width: 90%;
-}
-
-.text-input {
-  display: none;
 }
 
 .input,
@@ -435,6 +435,11 @@
   visibility: hidden;
 }
 
+.form-control .textarea-error,
+.form-control .textarea-success {
+  top: 7%;
+}
+
 .form-control small {
   visibility: hidden;
   margin-top: 50px;
@@ -455,6 +460,15 @@
 .getError small {
   color: #ff6b00;
   visibility: visible;
+}
+
+.getSuccess small {
+  color: #32cd32;
+  visibility: visible;
+}
+
+.text-input {
+  display: none;
 }
 
 .form .contact-but,

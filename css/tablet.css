@@ -168,12 +168,17 @@
   width: 45%;
 }
 
-#name {
+#fullname {
   display: none;
 }
 
 .contact-but {
   place-items: start;
+}
+
+.stories-button {
+  margin: 0;
+  width: 40%;
 }
 
 /* end of contact and footer styling */

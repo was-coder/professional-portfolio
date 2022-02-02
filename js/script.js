@@ -1,57 +1,79 @@
+// start of variables
 const mobileMenu = document.querySelector('#hamburger-div');
+const cancelMobile = document.querySelectorAll('.hamburger');
 const buttonClick = document.querySelectorAll('.button');
 const cancelButton = document.querySelector('.cancel');
+const form = document.querySelector('#form');
+const email = document.querySelector('#email');
+const blurAll = document.querySelector('#blurAll');
+const popup = document.querySelector('#popup');
+// end of variables
 
+// Start of hamburger part
 const toggleShowClass = () => {
   document.querySelector('.mobileDiv').classList.toggle('show');
 };
 
 mobileMenu.addEventListener('click', toggleShowClass);
 
-const cancelMobile = document.querySelectorAll('.hamburger');
-
 cancelMobile.forEach(x => {
   x.addEventListener('click', toggleShowClass);
 });
+// End of hamburger part
 
-// start of email validation
-const form = document.getElementById('form');
-const email = document.getElementById('email');
-
-function setError(value, message) {
+// start of validation part
+const setError = (value, message) => {
   const formControl = value.parentElement;
   const small = formControl.querySelector('small');
   small.innerText = message;
   formControl.className = 'form-control getError';
-}
+};
 
-function setSuccess(value, message) {
+const setSuccess = (value, message) => {
   const formControl = value.parentElement;
   const small = formControl.querySelector('small');
   small.innerText = message;
   formControl.className = 'form-control getSuccess';
-}
+};
 
-function emailCheck(email) {
+const emailCheck = email => {
   const getEmail = /^(([^<>()\\[\]\\.,;:\s@"]+(\.[^<>()\\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   return getEmail.test(String(email).toLowerCase());
-}
+};
 
-function getValues() {
+const getValues = () => {
   const emailValue = email.value.trim();
 
   if (emailValue === '') {
-    setError(email, 'Email cannot be blank');
+    setError(email, 'Email cannot be empty');
   } else if (!emailCheck(emailValue)) {
     setError(email, 'Email is not valid');
   } else {
     setSuccess(email, 'Input Accepted');
   }
-}
+};
 
-form.addEventListener('click', () => {
+const isFormValid = () => {
+  const inputDiv = form.querySelectorAll('.form-control');
+  let result = true;
+  inputDiv.forEach(container => {
+    if (container.classList.contains('getError')) {
+      result = false;
+    }
+  });
+  return result;
+};
+
+form.addEventListener('submit', e => {
   getValues();
+  if (isFormValid() === true) {
+    form.submit();
+  } else {
+    e.preventDefault();
+  }
 });
+// End of validation part
+
 // Start of project information
 const information = [
   {
@@ -126,23 +148,18 @@ function getInfo(i) {
 }
 // End of including project information inside popup
 
-const blurAll = document.querySelector('#blurAll');
-const popup = document.querySelector('#popup');
-
+// Start of calling and removing the popup functions
 const safe = () => {
   blurAll.classList.toggle('active');
   popup.classList.toggle('active');
 };
 
-// Start of calling the popup functions
 for (let i = 0; i < information.length; i += 1) {
   buttonClick[i].addEventListener('click', () => {
     getInfo(i);
     safe();
   });
 }
-// Ending of calling the popup functions
 
-// Start of removing popup
 cancelButton.addEventListener('click', safe);
-// End of removing popup
+// Ending of calling and removing the popup functions

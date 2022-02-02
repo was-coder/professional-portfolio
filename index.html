@@ -28,7 +28,7 @@
                 class="hamburger-button cancel-hamburger"
                 id="cancel-hamburger"
               >
-                <i class="fas fa-times fa-2x"></i>
+                <i class="fas fa-times fa-2x hamburger"></i>
               </button>
               <!-- end of hamburger cancel nav -->
               <ul class="mobile-nav-ul">
@@ -345,15 +345,16 @@
             in touch.
           </h2>
 
-          <form action="https://formspree.io/f/xeqvdwpz" method="POST" id="form" class="form">
+          <form action="https://formspree.io/f/xeqvdwpz" method="POST" class="form" id="form">
             <input
               type="text"
               name="name"
-              id="name"
+              id="fullname"
               placeholder="Full Name"
               maxlength="30"
               class="input"
             />
+
             <input
               type="text"
               name="fname"
@@ -362,6 +363,7 @@
               maxlength="30"
               class="text-input"
             />
+
             <input
               type="text"
               name="lname"
@@ -370,6 +372,7 @@
               maxlength="30"
               class="text-input"
             />
+
             <div class="form-control">
               <input
                 type="email"
@@ -390,7 +393,10 @@
               maxlength="500"
               class="input-textarea"
             ></textarea>
-            <button type="button" class="stories-button button">Get in touch</button>
+
+            <button type="submit" class="stories-button button">
+              Get in touch
+            </button>
           </form>
         </div>
       </section>
