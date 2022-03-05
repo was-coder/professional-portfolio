@@ -163,15 +163,6 @@
   width: 50%;
 }
 
-.text-input {
-  display: inline-block;
-  width: 45%;
-}
-
-#fullname {
-  display: none;
-}
-
 .contact-but {
   place-items: start;
 }

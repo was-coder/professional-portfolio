@@ -4,7 +4,9 @@ const cancelMobile = document.querySelectorAll('.hamburger');
 const buttonClick = document.querySelectorAll('.button');
 const cancelButton = document.querySelector('.cancel');
 const form = document.querySelector('#form');
+const fullName = document.querySelector('#fullname');
 const email = document.querySelector('#email');
+const messageMe = document.querySelector('#messageMe');
 const blurAll = document.querySelector('#blurAll');
 const popup = document.querySelector('#popup');
 // end of variables
@@ -42,7 +44,15 @@ const emailCheck = email => {
 };
 
 const getValues = () => {
+  const fullNameValue = fullName.value.trim();
   const emailValue = email.value.trim();
+  const messageMeValue = messageMe.value.trim();
+
+  if (fullNameValue === '') {
+    setError(fullName, 'First name cannot be empty');
+  } else {
+    setSuccess(fullName, 'Input Accepted');
+  }
 
   if (emailValue === '') {
     setError(email, 'Email cannot be empty');
@@ -50,6 +60,12 @@ const getValues = () => {
     setError(email, 'Email is not valid');
   } else {
     setSuccess(email, 'Input Accepted');
+  }
+
+  if (messageMeValue === '') {
+    setError(messageMe, 'Message cannot be empty');
+  } else {
+    setSuccess(messageMe, 'message Accepted');
   }
 };
 
@@ -80,7 +96,7 @@ const information = [
     name: 'Professional',
     description:
       'lorem sdjkdss sjdsakjsa sdklsd lorem sdjkdss sjdsakjsa sdklsd lorem sdjkdss sjdsakjsa sdklsd lorem sdjkdss sjdsakjsa sdklsd lorem sdjkdss sjdsakjsa sdklsd lorem sdjkdss sjdsakjsa sdklsd lorem sdjkdss sjdsakjsa sdklsd',
-    image: 'url(../image/Placeholder.jpg)',
+    image: 'url(./image/Placeholder.jpg)',
     technology: '<li>Html</li><li>Html</li><li>Html</li>',
     live: 'https://www.google.com',
     source: 'https://www.google.com',
@@ -89,7 +105,7 @@ const information = [
     name: 'Wasiu',
     description:
       'iuwhwqjsa sdjhs uidsjas iuwsdjis iuwhwqjsa sdjhs uidsjas iuwsdjis iuwhwqjsa sdjhs uidsjas iuwsdjis iuwhwqjsa sdjhs uidsjas iuwsdjis',
-    image: 'url(../image/shape1.png)',
+    image: 'url(./image/shape1.png)',
     technology: '<li>Css</li><li>Css</li><li>Css</li>',
     live: 'href="https://www.facebook.com"',
     source: 'href="https://www.facebook.com"',
@@ -97,7 +113,7 @@ const information = [
   {
     name: 'Adelakun',
     description: 'rem sdjkdss sjdsakjsa sdklsd',
-    image: 'url(../image/shape2.png)',
+    image: 'url(./image/shape2.png)',
     technology: '<li>Js</li><li>Js</li><li>Js</li>',
     live: 'https://www.twitter.com',
     source: 'https://www.twitter.com',
@@ -105,7 +121,7 @@ const information = [
   {
     name: 'Olaiya',
     description: 'kjaqwskjsa lorem sdjkdss sjdsakjsa sdklsd',
-    image: 'url(../image/shape3.png)',
+    image: 'url(./image/shape3.png)',
     technology: '<li>javascript</li><li>Javascript</li><li>Javascript</li>',
     live: 'https://www.nairaland.com',
     source: 'https://www.nairaland.com',
@@ -113,7 +129,7 @@ const information = [
   {
     name: 'hwjshhskjws',
     description: 'qioqosqsa lorem sdjkdss sjdsakjsa sdklsd',
-    image: 'url(../image/Icon.png)',
+    image: 'url(./image/Icon.png)',
     technology: '<li>Html</li><li>Html</li><li>Html</li>',
     live: 'https://www.google.com',
     source: 'https://www.google.com',
@@ -121,7 +137,7 @@ const information = [
   {
     name: 'qoiqjwkwq',
     description: 'lorem qwiuoqq JIWWIQJJWS sdjkdss sjdsakjsa sdklsd',
-    image: 'url(../image/Placeholder.jpg)',
+    image: 'url(./image/Placeholder.jpg)',
     technology: '<li>Css</li><li>Html</li><li>Html</li>',
     live: 'https://www.naijaloaded.com',
     source: 'https://www.naijaloaded.com',
@@ -129,7 +145,7 @@ const information = [
   {
     name: 'Mr Taj',
     description: 'iqqjwqswq quiwqdhsxsn usahskaljlsja lorem sdjkdss sjdsakjsa sdklsd',
-    image: 'url(../image/Icon.png)',
+    image: 'url(./image/Icon.png)',
     technology: '<li>Js</li><li>Html</li><li>Html</li>',
     live: 'https://www.goal.com',
     source: 'https://www.goal.com',

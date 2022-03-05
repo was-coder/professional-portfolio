@@ -394,7 +394,6 @@
   padding: 10px;
   font: 400 15px/24px 'Inter', sans-serif;
   border: none;
-  margin-bottom: 25px;
 }
 
 #email {
@@ -465,10 +464,6 @@
 .getSuccess small {
   color: #32cd32;
   visibility: visible;
-}
-
-.text-input {
-  display: none;
 }
 
 .form .contact-but,
