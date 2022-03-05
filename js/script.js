@@ -4,7 +4,7 @@ const cancelMobile = document.querySelectorAll('.hamburger');
 const buttonClick = document.querySelectorAll('.button');
 const cancelButton = document.querySelector('.cancel');
 const form = document.querySelector('#form');
-const fullName = document.querySelector('#fullname');
+const fullname = document.querySelector('#fullname');
 const email = document.querySelector('#email');
 const messageMe = document.querySelector('#messageMe');
 const blurAll = document.querySelector('#blurAll');
@@ -24,6 +24,7 @@ cancelMobile.forEach(x => {
 // End of hamburger part
 
 // start of validation part
+
 const setError = (value, message) => {
   const formControl = value.parentElement;
   const small = formControl.querySelector('small');
@@ -43,29 +44,33 @@ const emailCheck = email => {
   return getEmail.test(String(email).toLowerCase());
 };
 
-const getValues = () => {
-  const fullNameValue = fullName.value.trim();
-  const emailValue = email.value.trim();
-  const messageMeValue = messageMe.value.trim();
-
-  if (fullNameValue === '') {
-    setError(fullName, 'First name cannot be empty');
+const validateName = () => {
+  if (fullname === '') {
+    setError(fullname, 'Name cannot be empty');
+  } else if (fullname.value.length < 3) {
+    setError(fullname, 'Name cannot be less than 3 characters');
   } else {
-    setSuccess(fullName, 'Input Accepted');
+    setSuccess(fullname);
   }
+};
+
+const validateMessage = () => {
+  if (messageMe.value.length < 15) {
+    setError(messageMe, 'Message should be more than 15 characters');
+  } else {
+    setSuccess(messageMe);
+  }
+};
+
+const getValues = () => {
+  const emailValue = email.value.trim();
 
   if (emailValue === '') {
     setError(email, 'Email cannot be empty');
   } else if (!emailCheck(emailValue)) {
     setError(email, 'Email is not valid');
   } else {
-    setSuccess(email, 'Input Accepted');
-  }
-
-  if (messageMeValue === '') {
-    setError(messageMe, 'Message cannot be empty');
-  } else {
-    setSuccess(messageMe, 'message Accepted');
+    setSuccess(email);
   }
 };
 
@@ -80,6 +85,8 @@ const isFormValid = () => {
   return result;
 };
 
+fullname.addEventListener('input', validateName);
+messageMe.addEventListener('input', validateMessage);
 form.addEventListener('submit', e => {
   getValues();
   if (isFormValid() === true) {

@@ -461,11 +461,6 @@
   visibility: visible;
 }
 
-.getSuccess small {
-  color: #32cd32;
-  visibility: visible;
-}
-
 .form .contact-but,
 .footer {
   display: grid;
