@@ -3,7 +3,7 @@ const mobileMenu = document.querySelector('#hamburger-div');
 const cancelMobile = document.querySelectorAll('.hamburger');
 const buttonClick = document.querySelectorAll('.button');
 const cancelButton = document.querySelector('.cancel');
-const form = document.querySelector('#form');
+const btn = document.querySelector('#btn');
 const fullname = document.querySelector('#fullname');
 const email = document.querySelector('#email');
 const messageMe = document.querySelector('#messageMe');
@@ -39,60 +39,72 @@ const setSuccess = (value, message) => {
   formControl.className = 'form-control getSuccess';
 };
 
+const disableBtn = value => {
+  btn.disabled = value;
+};
+disableBtn(true);
+
 const emailCheck = email => {
   const getEmail = /^(([^<>()\\[\]\\.,;:\s@"]+(\.[^<>()\\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   return getEmail.test(String(email).toLowerCase());
 };
 
 const validateName = () => {
-  if (fullname === '') {
+  if (fullname.value === '') {
     setError(fullname, 'Name cannot be empty');
+    disableBtn(true);
   } else if (fullname.value.length < 3) {
     setError(fullname, 'Name cannot be less than 3 characters');
+    disableBtn(true);
   } else {
     setSuccess(fullname);
   }
 };
 
-const validateMessage = () => {
-  if (messageMe.value.length < 15) {
-    setError(messageMe, 'Message should be more than 15 characters');
-  } else {
-    setSuccess(messageMe);
-  }
-};
-
-const getValues = () => {
-  const emailValue = email.value.trim();
-
-  if (emailValue === '') {
+const validateEmail = () => {
+  if (email.value === '') {
     setError(email, 'Email cannot be empty');
-  } else if (!emailCheck(emailValue)) {
+    disableBtn(true);
+  } else if (!emailCheck(email.value)) {
     setError(email, 'Email is not valid');
+    disableBtn(true);
   } else {
     setSuccess(email);
   }
 };
 
+const validateMessage = () => {
+  if (messageMe.value === '') {
+    setError(messageMe, 'Message cannot be empty');
+    disableBtn(true);
+  } else if (messageMe.value.length < 15) {
+    setError(messageMe, 'Message should be more than 15 characters');
+    disableBtn(true);
+  } else {
+    setSuccess(messageMe);
+    disableBtn(false);
+  }
+};
+
 const isFormValid = () => {
-  const inputDiv = form.querySelectorAll('.form-control');
-  let result = true;
+  const inputDiv = btn.querySelectorAll('.form-control');
+  let result = false;
   inputDiv.forEach(container => {
-    if (container.classList.contains('getError')) {
-      result = false;
+    if (container.classList.contains('getSuccess')) {
+      result = true;
     }
   });
   return result;
 };
 
 fullname.addEventListener('input', validateName);
+email.addEventListener('input', validateEmail);
 messageMe.addEventListener('input', validateMessage);
-form.addEventListener('submit', e => {
-  getValues();
+
+btn.addEventListener('submit', e => {
+  e.preventDefault();
   if (isFormValid() === true) {
-    form.submit();
-  } else {
-    e.preventDefault();
+    btn.submit();
   }
 });
 // End of validation part
