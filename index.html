@@ -28,7 +28,7 @@
                 class="hamburger-button cancel-hamburger"
                 id="cancel-hamburger"
               >
-                <i class="fas fa-times fa-2x"></i>
+                <i class="fas fa-times fa-2x hamburger"></i>
               </button>
               <!-- end of hamburger cancel nav -->
               <ul class="mobile-nav-ul">
@@ -88,23 +88,23 @@
 
             <div class="svg-container svg-home-container">
               <a href="https://github.com/was-coder">
-                <img src="/svg/github.svg" alt="Github logo" width="25" height="25" />
+                <img src="./svg/github.svg" alt="Github logo" width="25" height="25" />
               </a>
 
               <a href="https://www.linkedin.com/in/wasiu-adelakun-1a2a5b1a6/">
-                <img src="/svg/linkedin.svg" alt="linkedin logo" width="25" height="25" />
+                <img src="./svg/linkedin.svg" alt="linkedin logo" width="25" height="25" />
               </a>
 
               <a href="#">
-                <img src="/svg/hand.svg" alt="hand logo" width="25" height="25" />
+                <img src="./svg/hand.svg" alt="hand logo" width="25" height="25" />
               </a>
 
               <a href="https://twitter.com/devwaslead">
-                <img src="/svg/twitter.svg" alt="twitter logo" width="25" height="25" />
+                <img src="./svg/twitter.svg" alt="twitter logo" width="25" height="25" />
               </a>
 
               <a href="#">
-                <img src="/svg/m.svg" alt="m logo" width="25" height="25" />
+                <img src="./svg/m.svg" alt="m logo" width="25" height="25" />
               </a>
             </div>
           </div>
@@ -121,7 +121,7 @@
 
         <div class="stories-div">
           <img
-            src="/image/Placeholder.jpg"
+            src="./image/Placeholder.jpg"
             alt="Gym fitness trainer"
             class="stories-div-img"
             width="327"
@@ -345,77 +345,66 @@
             in touch.
           </h2>
 
-          <form action="https://formspree.io/f/xeqvdwpz" method="POST" class="form">
-            <input
-              type="text"
-              name="name"
-              id="name"
-              placeholder="Full Name"
-              maxlength="30"
-              class="input"
-              required
-            />
-            <input
-              type="text"
-              name="fname"
-              id="fname"
-              placeholder="First Name"
-              maxlength="30"
-              class="text-input"
-              required
-            />
-            <input
-              type="text"
-              name="lname"
-              id="lname"
-              placeholder="Last Name"
-              maxlength="30"
-              class="text-input"
-              required
-            />
-            <input
-              type="email"
-              name="_replyto"
-              id="email"
-              placeholder="Enter your Email"
-              class="input"
-              required
-            />
-            <textarea
-              name="message"
-              id="message"
-              placeholder="Enter text here"
-              maxlength="500"
-              class="input-textarea"
-              required
-            ></textarea>
-            <div class="contact-but">
-              <button type="submit" class="stories-button button">Get in touch</button>
+          <form action="https://formspree.io/f/xeqvdwpz" method="POST" class="form" id="form">
+            <div class="form-control">
+              <input
+                type="text"
+                name="name"
+                id="fullname"
+                placeholder="Full Name"
+                maxlength="30"
+                class="input"
+              />
+              <i class="fas fa-exclamation-circle error"></i>
+              <i class="fas fa-check-circle success"></i>
+              <small>Error Message</small>
             </div>
+
+            <div class="form-control">
+              <input
+                type="email"
+                name="_replyto"
+                id="email"
+                placeholder="Enter your Email"
+                class="input"
+              />
+              <i class="fas fa-exclamation-circle error"></i>
+              <i class="fas fa-check-circle success"></i>
+              <small>Error Message</small>
+            </div>
+
+            <div class="form-control">
+              <textarea
+                name="messageMe"
+                id="messageMe"
+                placeholder="Enter text here"
+                maxlength="500"
+                class="input-textarea"
+              ></textarea>
+              <i class="fas fa-exclamation-circle error"></i>
+              <i class="fas fa-check-circle success"></i>
+              <small>Error Message</small>
+            </div>
+
+            <button type="submit" class="stories-button button" id="btn">
+              Get in touch
+            </button>
           </form>
         </div>
       </section>
 
       <footer class="footer">
         <div class="svg-container svg-footer-container">
-          <a href="https://github.com/was-coder">
-            <img src="/svg/github.svg" alt="github logo" width="25" height="25" />
-          </a>
-
-          <a href="https://www.linkedin.com/in/wasiu-adelakun-1a2a5b1a6/">
-            <img src="/svg/linkedin.svg" alt="linkedin logo" width="25" height="25" />
-          </a>
-
           <a href="#">
-            <img src="/svg/hand.svg" alt="hand logo" width="25" height="25" />
+            <img src="./svg/hand.svg" alt="hand logo" width="25" height="25" />
           </a>
 
           <a href="https://twitter.com/devwaslead">
-            <img src="/svg/twitter.svg" alt="twitter logo" width="25" height="25" />
+            <img src="./svg/twitter.svg" alt="twitter logo" width="25" height="25" />
           </a>
 
           <a href="#">
-            <img src="/svg/m.svg" alt="m logo" width="25" height="25" />
+            <img src="./svg/m.svg" alt="m logo" width="25" height="25" />
           </a>
         </div>
       </footer>
@@ -426,7 +415,7 @@
       <div class="multi-div">
         <h3 class="name">Multi Post Stories</h3>
         <button type="button" class="cancel">
-          <img src="/svg/close.svg" alt="cancel button" class="image" />
+          <img src="./svg/close.svg" alt="cancel button" class="image" />
         </button>
       </div>
 
@@ -449,17 +438,17 @@
           <div class="popup-button">
             <div class="popup-button-div">
               <a href="" target="_blank" id="live">See Live</a>
-              <img src="/svg/Icon.svg" alt="see live" />
+              <img src="./svg/Icon.svg" alt="see live" />
             </div>
             <div class="popup-button-div">
               <a href="" target="_blank" id="source">See Source</a>
-              <img src="/svg/github.svg" alt="github" />
+              <img src="./svg/github.svg" alt="github" />
             </div>
           </div>
         </div>
       </div>
     </div>
     <!--End of  Pop-up -->
-    <script src="/js/script.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
