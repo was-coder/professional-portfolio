@@ -39,14 +39,31 @@ const setSuccess = (value, message) => {
   formControl.className = 'form-control getSuccess';
 };
 
+const emailCheck = email => {
+  const getEmail = /^(([^<>()\\[\]\\.,;:\s@"]+(\.[^<>()\\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  return getEmail.test(String(email).toLowerCase());
+};
+
 const disableBtn = value => {
   btn.disabled = value;
 };
 disableBtn(true);
 
-const emailCheck = email => {
-  const getEmail = /^(([^<>()\\[\]\\.,;:\s@"]+(\.[^<>()\\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  return getEmail.test(String(email).toLowerCase());
+const storeValues = {
+  name: '',
+  email: '',
+  message: '',
+};
+
+const setValues = () => {
+  storeValues.name = fullname.value;
+  storeValues.email = email.value;
+  storeValues.message = messageMe.value;
+  localStorage.setItem('myValues', JSON.stringify(storeValues));
+};
+
+const getValues = () => {
+  localStorage.getItem('storeValues');
 };
 
 const validateName = () => {
@@ -59,6 +76,7 @@ const validateName = () => {
   } else {
     setSuccess(fullname);
   }
+  setValues();
 };
 
 const validateEmail = () => {
@@ -71,6 +89,7 @@ const validateEmail = () => {
   } else {
     setSuccess(email);
   }
+  setValues();
 };
 
 const validateMessage = () => {
@@ -84,29 +103,14 @@ const validateMessage = () => {
     setSuccess(messageMe);
     disableBtn(false);
   }
-};
-
-const isFormValid = () => {
-  const inputDiv = btn.querySelectorAll('.form-control');
-  let result = false;
-  inputDiv.forEach(container => {
-    if (container.classList.contains('getSuccess')) {
-      result = true;
-    }
-  });
-  return result;
+  setValues();
 };
 
 fullname.addEventListener('input', validateName);
 email.addEventListener('input', validateEmail);
 messageMe.addEventListener('input', validateMessage);
+window.addEventListener('load', getValues);
 
-btn.addEventListener('submit', e => {
-  e.preventDefault();
-  if (isFormValid() === true) {
-    btn.submit();
-  }
-});
 // End of validation part
 
 // Start of project information
