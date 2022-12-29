@@ -34,7 +34,7 @@
 .main-container {
   flex-direction: row-reverse;
   align-items: center;
-  background-image: url('../image/Illustration-header.png');
+  background-image: url("../image/Illustration-header.png");
   background-position: right 0 top 50px;
   background-size: 60%;
 }
@@ -111,7 +111,7 @@
 
 /* start of about styling */
 .about {
-  background-image: url('/image/about-me-desktop.png');
+  background-image: url("/image/about-me-desktop.png");
   background-repeat: no-repeat;
   background-size: 40%;
   background-position: top 70px right;
