@@ -1,0 +1,55 @@
+/* start of work styling */
+.stories-div div {
+  width: 40%;
+}
+
+/* .work-grid {
+  grid-template-columns: repeat(3, 1fr);
+} */
+
+/* Start of popup */
+.popup {
+  width: 800px;
+  padding: 25px;
+}
+
+.main-div {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.text-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  width: 80%;
+  margin-left: 30px;
+}
+
+.popup-button button {
+  margin: 0;
+}
+
+/* End of popup */
+
+/* end of work styling */
+
+/* start of about styling */
+.about-div h2 {
+  font-size: 4.3rem;
+}
+
+/* end of about styling */
+
+/* start of contact and footer styling */
+.contact-section-header {
+  width: 30%;
+  font-size: 35px;
+}
+
+.stories-button {
+  width: 30%;
+}
+
+/* end of contact and footer styling */

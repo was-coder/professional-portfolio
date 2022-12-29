@@ -2,8 +2,7 @@
 
 > This is my professional portfolio project which shows my works.
 
-![screenshot](No screenshot for now)
-
+![screenshot](No screenshot for)
 
 ## Built With
 
@@ -13,7 +12,7 @@
 
 ## Live Demo
 
-[Live Demo Link](No live demo for now)
+[Live Demo Link](https://waslead.netlify.app/)
 
 ### Development (Running locally)
 
