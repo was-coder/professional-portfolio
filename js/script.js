@@ -7,13 +7,12 @@ const btn = document.querySelector('#btn');
 const fullname = document.querySelector('#fullname');
 const email = document.querySelector('#email');
 const messageMe = document.querySelector('#messageMe');
-const blurAll = document.querySelector('#blurAll');
 const popup = document.querySelector('#popup');
 // end of variables
 
 // Start of hamburger part
 const toggleShowClass = () => {
-  document.querySelector('.mobileDiv').classList.toggle('show');
+  document.querySelector('.mobile-div').classList.toggle('show');
 };
 
 mobileMenu.addEventListener('click', toggleShowClass);
@@ -29,17 +28,18 @@ const setError = (value, message) => {
   const formControl = value.parentElement;
   const small = formControl.querySelector('small');
   small.innerText = message;
-  formControl.className = 'form-control getError';
+  formControl.className = 'form-control get-error';
 };
 
 const setSuccess = (value, message) => {
   const formControl = value.parentElement;
   const small = formControl.querySelector('small');
   small.innerText = message;
-  formControl.className = 'form-control getSuccess';
+  formControl.className = 'form-control get-success';
 };
 
 const emailCheck = (email) => {
+  // eslint-disable-next-line operator-linebreak
   const getEmail =
     /^(([^<>()\\[\]\\.,;:\s@"]+(\.[^<>()\\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   return getEmail.test(String(email).toLowerCase());

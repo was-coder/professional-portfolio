@@ -1,5 +1,5 @@
 /* Base styles */
-@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto&display=swap&family=Inter&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto&display=swap&family=Inter&display=swap");
 
 :root {
   --primary: #3c3a39;
@@ -8,10 +8,10 @@
   --others: #ff6b00;
   --alternative: #091e42;
   --dark: #1c1a19;
-  --poppins: 'Poppins', sans-serif;
-  --crete: 'Crete Round', serif;
-  --roboto: 'Roboto', sans-serif;
-  --inter: 'Inter', sans-serif;
+  --poppins: "Poppins", sans-serif;
+  --crete: "Crete Round", serif;
+  --roboto: "Roboto", sans-serif;
+  --inter: "Inter", sans-serif;
 }
 
 *,
