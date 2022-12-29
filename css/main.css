@@ -75,7 +75,7 @@
   justify-content: center;
   padding: 0 24px;
   position: relative;
-  background-image: url("../image/illustration-header-mobile.png");
+  background-image: url('../image/illustration-header-mobile.png');
   background-position: right 0 bottom -40px;
   background-repeat: no-repeat;
 }
@@ -102,7 +102,7 @@
 
 /* start of work styling */
 .work {
-  min-height: 420vh;
+  min-height: 300vh;
   margin: 30px auto;
   width: 80%;
   padding-top: 50px;
@@ -173,9 +173,8 @@
 
 .inner-work {
   flex-direction: column;
-  background-image:
-    linear-gradient(to top, rgb(0 0 0 / 52%), rgb(0 0 0 / 73%)),
-    url("../svg/professional.svg");
+  background-image: linear-gradient(to top, rgb(0 0 0 / 52%), rgb(0 0 0 / 73%)),
+    url('../svg/professional.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -362,7 +361,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("../image/illustration-about-me-mobile.png");
+  background-image: url('../image/illustration-about-me-mobile.png');
   background-position: top right;
   background-repeat: no-repeat;
 }
