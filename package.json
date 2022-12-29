@@ -1,22 +1,39 @@
 {
-  "name": "html-css-template",
+  "name": "js-template",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "i": "^0.3.7"
+    "fa-icon-element": "^1.0.1",
+    "file-loader": "^6.2.0",
+    "jquery": "^3.6.1"
   },
   "devDependencies": {
-    "eslint": "^8.7.0",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.25.4",
-    "hint": "^6.1.0",
-    "plugin-import": "^1.0.52",
-    "prettier": "1.18.2",
-    "stylelint": "^13.6.1",
-    "stylelint-config-recommended": "^3.0.0",
-    "stylelint-config-standard": "^20.0.0",
-    "stylelint-csstree-validator": "^1.8.0",
-    "stylelint-scss": "^3.18.0"
+    "@babel/core": "^7.17.9",
+    "@babel/preset-env": "^7.16.11",
+    "auto-live-reload-webpack-plugin": "^1.0.4",
+    "babel-loader": "^8.2.4",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^10.2.4",
+    "css-loader": "^6.7.1",
+    "css-minimizer-webpack-plugin": "^4.2.2",
+    "eslint": "^8.x",
+    "eslint-config-airbnb-base": "^15.x",
+    "eslint-plugin-import": "^2.x",
+    "hint": "^2.0.0",
+    "html-loader": "^3.1.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.6.0",
+    "prettier": "^2.x",
+    "stylelint": "^14.x",
+    "stylelint-config-recommended": "^7.x",
+    "stylelint-config-standard": "^25.x",
+    "stylelint-csstree-validator": "^2.x",
+    "stylelint-scss": "^4.x",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.8.1",
+    "webpack-fix-style-only-entries": "^0.6.1",
+    "webpack-remove-empty-scripts": "^0.8.0"
   },
   "scripts": {
     "format": "npx prettier  --write **/*.{html,js,json,md,json,yaml,yml,jsx}",
@@ -26,6 +43,22 @@
     "stylelint": "npx stylelint **/*.css --fix",
     "stylelint:check": "npx stylelint **/*.css",
     "eslint": "npx eslint . --fix",
-    "eslint:check": "npx eslint ."
-  }
+    "eslint:check": "npx eslint .",
+    "build": "npx webpack --mode production",
+    "build:watch": "npx webpack --watch",
+    "dev": "webpack serve"
+  },
+  "description": "> This is a Javascript Book Library Project.",
+  "main": ".prettierrc.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/was-coder/book-library.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/was-coder/book-library/issues"
+  },
+  "homepage": "https://github.com/was-coder/book-library#readme"
 }

@@ -72,6 +72,10 @@
   width: 65%;
 }
 
+.usage {
+  font-size: 1.3rem;
+}
+
 .stories-div {
   flex-direction: row;
   margin-top: 70px;

@@ -18,7 +18,7 @@ const toggleShowClass = () => {
 
 mobileMenu.addEventListener('click', toggleShowClass);
 
-cancelMobile.forEach(x => {
+cancelMobile.forEach((x) => {
   x.addEventListener('click', toggleShowClass);
 });
 // End of hamburger part
@@ -39,12 +39,13 @@ const setSuccess = (value, message) => {
   formControl.className = 'form-control getSuccess';
 };
 
-const emailCheck = email => {
-  const getEmail = /^(([^<>()\\[\]\\.,;:\s@"]+(\.[^<>()\\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+const emailCheck = (email) => {
+  const getEmail =
+    /^(([^<>()\\[\]\\.,;:\s@"]+(\.[^<>()\\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   return getEmail.test(String(email).toLowerCase());
 };
 
-const disableBtn = value => {
+const disableBtn = (value) => {
   btn.disabled = value;
 };
 disableBtn(true);
@@ -116,62 +117,48 @@ window.addEventListener('load', getValues);
 // Start of project information
 const information = [
   {
-    name: 'Professional',
+    name: 'Book Library',
     description:
-      'lorem sdjkdss sjdsakjsa sdklsd lorem sdjkdss sjdsakjsa sdklsd lorem sdjkdss sjdsakjsa sdklsd lorem sdjkdss sjdsakjsa sdklsd lorem sdjkdss sjdsakjsa sdklsd lorem sdjkdss sjdsakjsa sdklsd lorem sdjkdss sjdsakjsa sdklsd',
-    image: 'url(./image/Placeholder.jpg)',
-    technology: '<li>Html</li><li>Html</li><li>Html</li>',
-    live: 'https://www.google.com',
-    source: 'https://www.google.com',
+      'This is a Book Library that let users to store information of a book they find interesting and will love to read again or recommend to anyone. It also store data using local storage.',
+    image: 'url(./image/book-library.PNG)',
+    technology: '<li>Html</li><li>Css</li><li>Bootstrap</li><li>Javascript</li>',
+    live: 'https://books-lib.netlify.app/',
+    source: 'https://github.com/was-coder/book-library',
   },
   {
-    name: 'Wasiu',
+    name: 'MetaBnb Clone',
     description:
-      'iuwhwqjsa sdjhs uidsjas iuwsdjis iuwhwqjsa sdjhs uidsjas iuwsdjis iuwhwqjsa sdjhs uidsjas iuwsdjis iuwhwqjsa sdjhs uidsjas iuwsdjis',
-    image: 'url(./image/shape1.png)',
-    technology: '<li>Css</li><li>Css</li><li>Css</li>',
-    live: 'href="https://www.facebook.com"',
-    source: 'href="https://www.facebook.com"',
+      'we provide you access to luxury and affordable houses in the metaverse, get a chance to turn your imagination to reality at your comfort zone',
+    image: 'url(./image/metaBnb.PNG)',
+    technology: '<li>Css</li><li>Javascript</li><li>React</li>',
+    live: 'https://bnb-meta.netlify.app/',
+    source: 'https://github.com/was-coder/meta-bnb',
   },
   {
-    name: 'Adelakun',
-    description: 'rem sdjkdss sjdsakjsa sdklsd',
-    image: 'url(./image/shape2.png)',
-    technology: '<li>Js</li><li>Js</li><li>Js</li>',
-    live: 'https://www.twitter.com',
-    source: 'https://www.twitter.com',
+    name: 'Count D App',
+    description:
+      'This is a counter application that counts value either by increasing or decreasing the value.',
+    image: 'url(./image/countapp.PNG)',
+    technology: '<li>Css</li><li>Javascript</li><li>React</li><li>Error Boundary</li>',
+    live: 'https://countdapp.netlify.app/',
+    source: 'https://github.com/was-coder/react-counter',
   },
   {
-    name: 'Olaiya',
-    description: 'kjaqwskjsa lorem sdjkdss sjdsakjsa sdklsd',
-    image: 'url(./image/shape3.png)',
-    technology: '<li>javascript</li><li>Javascript</li><li>Javascript</li>',
-    live: 'https://www.nairaland.com',
-    source: 'https://www.nairaland.com',
+    name: 'NextWeb Clone',
+    description: 'This is a nextweb clone project that shows latest tech news',
+    image: 'url(./image/nextweb.PNG)',
+    technology: '<li>Html</li><li>Css</li><li>Javascript</li>',
+    live: 'https://nextwebclone.netlify.app/',
+    source: 'https://github.com/was-coder/nextWebClone',
   },
   {
-    name: 'hwjshhskjws',
-    description: 'qioqosqsa lorem sdjkdss sjdsakjsa sdklsd',
-    image: 'url(./image/Icon.png)',
-    technology: '<li>Html</li><li>Html</li><li>Html</li>',
-    live: 'https://www.google.com',
-    source: 'https://www.google.com',
-  },
-  {
-    name: 'qoiqjwkwq',
-    description: 'lorem qwiuoqq JIWWIQJJWS sdjkdss sjdsakjsa sdklsd',
-    image: 'url(./image/Placeholder.jpg)',
-    technology: '<li>Css</li><li>Html</li><li>Html</li>',
-    live: 'https://www.naijaloaded.com',
-    source: 'https://www.naijaloaded.com',
-  },
-  {
-    name: 'Mr Taj',
-    description: 'iqqjwqswq quiwqdhsxsn usahskaljlsja lorem sdjkdss sjdsakjsa sdklsd',
-    image: 'url(./image/Icon.png)',
-    technology: '<li>Js</li><li>Html</li><li>Html</li>',
-    live: 'https://www.goal.com',
-    source: 'https://www.goal.com',
+    name: 'Calculator App',
+    description:
+      'This is a calculator application that calculates values. Implementation of Reducer was used',
+    image: 'url(./image/calculator.PNG)',
+    technology: '<li>Css</li><li>React</li><li>Reducer</li>',
+    live: 'https://waslead-calc.netlify.app/',
+    source: 'https://github.com/was-coder/react-calculator',
   },
 ];
 // End of project information
@@ -189,7 +176,6 @@ function getInfo(i) {
 
 // Start of calling and removing the popup functions
 const safe = () => {
-  blurAll.classList.toggle('active');
   popup.classList.toggle('active');
 };
 

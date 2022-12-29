@@ -1,116 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Wasiu portfolio website" />
-    <title>Wasiu | Portfolio</title>
 
-    <!-- css link -->
-    <link rel="stylesheet" href="./css/index.css" media="all" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Wasiu portfolio website" />
+  <title>Wasiu | Portfolio</title>
 
-    <!-- fontawesome link -->
-    <script async src="https://kit.fontawesome.com/b32460d9a8.js" crossorigin="anonymous"></script>
-  </head>
-  <body>
-    <div class="overall-container" id="blurAll">
-      <div class="container">
-        <!-- start of header section -->
-        <header>
-          <!-- start of mobile list item -->
+  <!-- css link -->
+  <link rel="stylesheet" href="./css/index.css" media="all" />
 
-          <div class="mobile-div mobileDiv" id="mobile-div">
-            <nav class="mobile-nav">
-              <!-- start of hamburger cancel nav -->
-              <button
-                type="submit"
-                aria-label="Right Align"
-                class="hamburger-button cancel-hamburger"
-                id="cancel-hamburger"
-              >
-                <i class="fas fa-times fa-2x hamburger"></i>
-              </button>
-              <!-- end of hamburger cancel nav -->
-              <ul class="mobile-nav-ul">
-                <li class="mobile-nav-li">
-                  <a href="#portfolio" class="mobile-nav-link hamburger">Portfolio</a>
-                </li>
-                <li class="mobile-nav-li">
-                  <a href="#about" class="mobile-nav-link hamburger">About</a>
-                </li>
-                <li class="mobile-nav-li">
-                  <a href="#contact" class="mobile-nav-link hamburger">Contact</a>
-                </li>
-              </ul>
-            </nav>
+  <!-- fontawesome link -->
+  <script async src="https://kit.fontawesome.com/b32460d9a8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="overall-container" id="blurAll">
+    <div class="container">
+      <!-- start of header section -->
+      <header>
+        <!-- start of mobile list item -->
+
+        <div class="mobile-div mobileDiv" id="mobile-div">
+          <nav class="mobile-nav">
+            <!-- start of hamburger cancel nav -->
+            <button type="submit" aria-label="Right Align" class="hamburger-button cancel-hamburger"
+              id="cancel-hamburger">
+              <i class="fas fa-times fa-2x hamburger"></i>
+            </button>
+            <!-- end of hamburger cancel nav -->
+            <ul class="mobile-nav-ul">
+              <li class="mobile-nav-li">
+                <a href="#portfolio" class="mobile-nav-link hamburger">Portfolio</a>
+              </li>
+              <li class="mobile-nav-li">
+                <a href="#about" class="mobile-nav-link hamburger">About</a>
+              </li>
+              <li class="mobile-nav-li">
+                <a href="#contact" class="mobile-nav-link hamburger">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <!-- end of mobile list item -->
+
+        <div class="logo-div">
+          <a href="#" class="logo-link">Ade</a>
+
+          <!-- start of desktop nav list -->
+          <nav class="nav">
+            <ul class="nav-ul">
+              <li class="nav-li"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+              <li class="nav-li"><a href="#about" class="nav-link">About</a></li>
+              <li class="nav-li"><a href="#contact" class="nav-link">Contact</a></li>
+              <li class="nav-li">
+                <a href="#email" class="nav-link"><i class="fas fa-envelope envelope"></i></a>
+              </li>
+            </ul>
+          </nav>
+          <!-- end of desktop nav list -->
+
+          <!-- start of hamburger nav -->
+          <nav class="hamburger-nav" id="hamburger-div">
+            <button type="submit" aria-label="Right Align" class="hamburger-button">
+              <i class="fas fa-bars fa-2x"></i>
+            </button>
+          </nav>
+          <!-- end of hamburger nav -->
+        </div>
+      </header>
+      <!-- end of header section -->
+
+      <!-- start of home section -->
+      <main id="home" class="home">
+        <div class="main-container">
+          <div>
+            <h1>hey there.<br />i'm wasiu adelakun</h1>
+            <h2>I am a certified Software Engineer</h2>
+            <p>
+              I can help you build a product, feature or website. Look through some of my work and
+              experience! If you like what you see and have a project you need coded, don’t
+              hesitate to contact me.
+            </p>
           </div>
-          <!-- end of mobile list item -->
 
-          <div class="logo-div">
-            <a href="#" class="logo-link">my logo</a>
+          <div class="svg-container svg-home-container">
+            <a href="https://github.com/was-coder">
+              <img src="./svg/github.svg" alt="Github" width="25" height="25" />
+            </a>
 
-            <!-- start of desktop nav list -->
-            <nav class="nav">
-              <ul class="nav-ul">
-                <li class="nav-li"><a href="#portfolio" class="nav-link">Portfolio</a></li>
-                <li class="nav-li"><a href="#about" class="nav-link">About</a></li>
-                <li class="nav-li"><a href="#contact" class="nav-link">Contact</a></li>
-                <li class="nav-li">
-                  <a href="#email" class="nav-link"><i class="fas fa-envelope envelope"></i></a>
-                </li>
-              </ul>
-            </nav>
-            <!-- end of desktop nav list -->
+            <a href="https://www.linkedin.com/in/wasiu-adelakun-1a2a5b1a6/">
+              <img src="./svg/linkedin.svg" alt="linkedin" width="25" height="25" />
+            </a>
 
-            <!-- start of hamburger nav -->
-            <nav class="hamburger-nav" id="hamburger-div">
-              <button type="submit" aria-label="Right Align" class="hamburger-button">
-                <i class="fas fa-bars fa-2x"></i>
-              </button>
-            </nav>
-            <!-- end of hamburger nav -->
+            <a href="https://twitter.com/devwaslead">
+              <img src="./svg/twitter.svg" alt="twitter" width="25" height="25" />
+            </a>
           </div>
-        </header>
-        <!-- end of header section -->
-
-        <!-- start of home section -->
-        <main id="home" class="home">
-          <div class="main-container">
-            <div>
-              <h1>hey there.<br />i'm wasiu</h1>
-              <h2>I'am a Software Developer</h2>
-              <p>
-                I can help you build a product, feature or website. Look through some of my work and
-                experience! If you like what you see and have a project you need coded, don’t
-                hesitate to contact me.
-              </p>
-            </div>
-
-            <div class="svg-container svg-home-container">
-              <a href="https://github.com/was-coder">
-                <img src="./svg/github.svg" alt="Github logo" width="25" height="25" />
-              </a>
-
-              <a href="https://www.linkedin.com/in/wasiu-adelakun-1a2a5b1a6/">
-                <img src="./svg/linkedin.svg" alt="linkedin logo" width="25" height="25" />
-              </a>
-
-              <a href="#">
-                <img src="./svg/hand.svg" alt="hand logo" width="25" height="25" />
-              </a>
-
-              <a href="https://twitter.com/devwaslead">
-                <img src="./svg/twitter.svg" alt="twitter logo" width="25" height="25" />
-              </a>
-
-              <a href="#">
-                <img src="./svg/m.svg" alt="m logo" width="25" height="25" />
-              </a>
-            </div>
-          </div>
-        </main>
-        <!-- end of home section -->
-      </div>
+        </div>
+      </main>
+      <!-- end of home section -->
 
       <!-- start of work section -->
       <section id="portfolio" class="work">
@@ -120,26 +109,22 @@
         </div>
 
         <div class="stories-div">
-          <img
-            src="./image/Placeholder.jpg"
-            alt="Gym fitness trainer"
-            class="stories-div-img"
-            width="327"
-            height="237"
-          />
+          <img src="./image/book-library.PNG" alt="Book Library" class="stories-div-img" width="327" height="237" />
 
           <div>
-            <h3>multi-post stories</h3>
-            <p>
-              A daily selection of privately personalized reads; no accounts or sign-ups required.
-              has been the industry's standard dummy text ever since the 1500s, when an unknown
-              printer took a standard dummy text.
-            </p>
+            <h3>Book Library</h3>
+            <ul class="usage work-usage">
+              <li>Write little to no html, All codes are majorly in js</li>
+              <li>Split functions and pages into components</li>
+              <li>Store data with local storage</li>
+              <li>Implement Single Page Application(SPA)</li>
+              <li>Professional gitflow was used</li>
+            </ul>
             <ul class="stories-div-ul">
-              <li>css</li>
-              <li>html</li>
-              <li>bootstrap</li>
-              <li>Ruby</li>
+              <li>Html</li>
+              <li>Css</li>
+              <li>Bootstrap</li>
+              <li>Js</li>
             </ul>
             <button type="button" class="stories-button button">
               see project
@@ -151,15 +136,17 @@
         <div class="work-grid">
           <div class="inner-work">
             <div class="inner-work-text">
-              <h3>professional art <br />printing data</h3>
-              <p>
-                A daily selection of privately personalized reads; no accounts or sign-ups required.
-                has been the industry's standard
-              </p>
+              <h3>MetaBnb Clone</h3>
+              <ul class="usage">
+                <li class="usage-li">Used React to implement the clone</li>
+                <li class="usage-li">Used vanilla css for its styling</li>
+                <li class="usage-li">Implement flex/grid properly</li>
+                <li class="usage-li">Make atomic commit on the project</li>
+              </ul>
               <ul class="inner-ul">
-                <li>html</li>
-                <li>bootstrap</li>
-                <li>Ruby</li>
+                <li>Css</li>
+                <li>Javascript</li>
+                <li>React</li>
               </ul>
             </div>
             <button type="button" class="inner-work-btn button">
@@ -169,15 +156,17 @@
 
           <div class="inner-work">
             <div class="inner-work-text">
-              <h3>professional art <br />printing data</h3>
-              <p>
-                A daily selection of privately personalized reads; no accounts or sign-ups required.
-                has been the industry's standard
-              </p>
+              <h3>Count D App</h3>
+              <ul class="usage">
+                <li class="usage-li">Used React to design the application</li>
+                <li class="usage-li">Used vanilla css for its styling</li>
+                <li class="usage-li">Implement Error Page and Error Boundary</li>
+                <li class="usage-li">Make atomic commit on the project</li>
+              </ul>
               <ul class="inner-ul">
-                <li>html</li>
-                <li>bootstrap</li>
-                <li>Ruby</li>
+                <li>Css</li>
+                <li>Javascript</li>
+                <li>React</li>
               </ul>
             </div>
             <button type="button" class="inner-work-btn button">
@@ -187,15 +176,16 @@
 
           <div class="inner-work">
             <div class="inner-work-text">
-              <h3>professional art <br />printing data</h3>
-              <p>
-                A daily selection of privately personalized reads; no accounts or sign-ups required.
-                has been the industry's standard
-              </p>
+              <h3>nextWeb Clone</h3>
+              <ul class="usage">
+                <li class="usage-li">Used vanilla css for its styling</li>
+                <li class="usage-li">Implement flex/grid properly</li>
+                <li class="usage-li">Make atomic commit on the project</li>
+              </ul>
               <ul class="inner-ul">
-                <li>html</li>
-                <li>bootstrap</li>
-                <li>Ruby</li>
+                <li>Html</li>
+                <li>Css</li>
+                <li>Javascript</li>
               </ul>
             </div>
             <button type="button" class="inner-work-btn button">
@@ -205,51 +195,16 @@
 
           <div class="inner-work">
             <div class="inner-work-text">
-              <h3>professional art <br />printing data</h3>
-              <p>
-                A daily selection of privately personalized reads; no accounts or sign-ups required.
-                has been the industry's standard
-              </p>
-              <ul class="inner-ul">
-                <li>html</li>
-                <li>bootstrap</li>
-                <li>Ruby</li>
+              <h3>Calculator App</h3>
+              <ul class="usage">
+                <li class="usage-li">Used React for its implementation</li>
+                <li class="usage-li">Used vanilla css for its styling</li>
+                <li class="usage-li">Implement flex/grid properly</li>
+                <li class="usage-li">Make atomic commit on the project</li>
               </ul>
-            </div>
-            <button type="button" class="inner-work-btn button">
-              see projects
-            </button>
-          </div>
-
-          <div class="inner-work">
-            <div class="inner-work-text">
-              <h3>professional art <br />printing data</h3>
-              <p>
-                A daily selection of privately personalized reads; no accounts or sign-ups required.
-                has been the industry's standard
-              </p>
               <ul class="inner-ul">
-                <li>html</li>
-                <li>bootstrap</li>
-                <li>Ruby</li>
-              </ul>
-            </div>
-            <button type="button" class="inner-work-btn button">
-              see projects
-            </button>
-          </div>
-
-          <div class="inner-work">
-            <div class="inner-work-text">
-              <h3>professional art <br />printing data</h3>
-              <p>
-                A daily selection of privately personalized reads; no accounts or sign-ups required.
-                has been the industry's standard
-              </p>
-              <ul class="inner-ul">
-                <li>html</li>
-                <li>bootstrap</li>
-                <li>Ruby</li>
+                <li>Css</li>
+                <li>React</li>
               </ul>
             </div>
             <button type="button" class="inner-work-btn button">
@@ -265,11 +220,11 @@
         <div class="about-div">
           <h2>About me</h2>
           <p>
-            Hello I’m a software developer! I can help you build a product , feature or website Look
+            Hello I am a software developer! I can help you build a product, feature or website Look
             through some of my work and experience! If you like what you see and have a project you
             need coded, don’t hestiate to contact me.
           </p>
-          <button type="button" class="button">get my resume</button>
+          <a href="/document/Wasiu Adelakun.pdf" target="_blank" class="resume">get my resume</a>
         </div>
 
         <!-- languages and frameworks part -->
@@ -286,10 +241,11 @@
                 <li class="skillset">
                   language
                   <ul>
-                    <li>Javascript</li>
-                    <li>Ruby</li>
                     <li>Html</li>
                     <li>Css</li>
+                    <li>Javascript</li>
+                    <li>NodeJs</li>
+                    <li>Python</li>
                   </ul>
                 </li>
               </ul>
@@ -305,10 +261,10 @@
                   frameworks
                   <ul>
                     <li>Bootstrap</li>
-                    <li>Ruby on Rails</li>
-                    <li>RSPec</li>
-                    <li>CapyBara</li>
-                    <li>Selenium</li>
+                    <li>Sass</li>
+                    <li>Tailwind</li>
+                    <li>React</li>
+                    <li>Vue</li>
                   </ul>
                 </li>
               </ul>
@@ -323,11 +279,11 @@
                 <li class="skillset">
                   skills
                   <ul>
-                    <li>Codekit</li>
-                    <li>Github</li>
-                    <li>Codepen</li>
-                    <li>Gitlab</li>
-                    <li>Terminal</li>
+                    <li>Gitflow</li>
+                    <li>Team Work</li>
+                    <li>Communication</li>
+                    <li>Eye for Design</li>
+                    <li>Leadership</li>
                   </ul>
                 </li>
               </ul>
@@ -347,40 +303,22 @@
 
           <form action="https://formspree.io/f/xeqvdwpz" method="POST" class="form" id="form">
             <div class="form-control">
-              <input
-                type="text"
-                name="name"
-                id="fullname"
-                placeholder="Full Name"
-                maxlength="30"
-                class="input"
-              />
+              <input type="text" name="name" id="fullname" placeholder="Full Name" maxlength="30" class="input" />
               <i class="fas fa-exclamation-circle error"></i>
               <i class="fas fa-check-circle success"></i>
               <small>Error Message</small>
             </div>
 
             <div class="form-control">
-              <input
-                type="email"
-                name="_replyto"
-                id="email"
-                placeholder="Enter your Email"
-                class="input"
-              />
+              <input type="email" name="_replyto" id="email" placeholder="Enter your Email" class="input" />
               <i class="fas fa-exclamation-circle error"></i>
               <i class="fas fa-check-circle success"></i>
               <small>Error Message</small>
             </div>
 
             <div class="form-control">
-              <textarea
-                name="messageMe"
-                id="messageMe"
-                placeholder="Enter text here"
-                maxlength="500"
-                class="input-textarea"
-              ></textarea>
+              <textarea name="messageMe" id="messageMe" placeholder="Enter text here" maxlength="500"
+                class="input-textarea"></textarea>
               <i class="fas fa-exclamation-circle error"></i>
               <i class="fas fa-check-circle success"></i>
               <small>Error Message</small>
@@ -395,16 +333,16 @@
 
       <footer class="footer">
         <div class="svg-container svg-footer-container">
-          <a href="#">
-            <img src="./svg/hand.svg" alt="hand logo" width="25" height="25" />
+          <a href="https://github.com/was-coder" target="_blank">
+            <img src="./svg/github.svg" alt="github" width="25" height="25" />
           </a>
 
-          <a href="https://twitter.com/devwaslead">
-            <img src="./svg/twitter.svg" alt="twitter logo" width="25" height="25" />
+          <a href="https://www.linkedin.com/in/wasiu-adelakun-1a2a5b1a6/" target="_blank">
+            <img src="./svg/linkedin.svg" alt="linkedin" width="25" height="25" />
           </a>
 
-          <a href="#">
-            <img src="./svg/m.svg" alt="m logo" width="25" height="25" />
+          <a href="https://twitter.com/devwaslead" target="_blank">
+            <img src="./svg/twitter.svg" alt="twitter" width="25" height="25" />
           </a>
         </div>
       </footer>
@@ -450,5 +388,6 @@
     </div>
     <!--End of  Pop-up -->
     <script src="./js/script.js"></script>
-  </body>
+</body>
+
 </html>
