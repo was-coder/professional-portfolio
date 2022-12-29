@@ -139,7 +139,7 @@ const information = [
     description:
       'This is a counter application that counts value either by increasing or decreasing the value.',
     image: 'url(./image/countapp.PNG)',
-    technology: '<li>Css</li><li>Javascript</li><li>React</li><li>Error Boundary</li>',
+    technology: '<li>Css</li><li>Javascript</li><li>React</li>',
     live: 'https://countdapp.netlify.app/',
     source: 'https://github.com/was-coder/react-counter',
   },
